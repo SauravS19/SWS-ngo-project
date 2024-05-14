@@ -215,7 +215,65 @@ const Home = () => {
 {/* // <///////////////////////////////////////////////////////> */}
  {/* <div className='flex flex-col w-full h-auto mt-20 pb-10 px-40 bg-cover gap-5 '
        style={{backgroundImage:`url(${blob})`,backgroundPosition:`center`}}> */}
-       
+    <div className='flex flex-col w-full h-auto mt-20 pb-10 px-32 md:justify-center  bg-cover gap-5 '
+       style={{backgroundImage:`url(${blob})`,backgroundPosition:`center`}}>
+      <div className='h-20 w-auto  text-6xl sm:text-7xl md:text-8xl  font-serif mb-20 md:w-1/4'>
+        Programms
+      </div> 
+      <div className="card bg-yellow-100 flex  flex-col md:flex-row w-auto md:rounded-3xl md:flex-1 md:ml-0  lg:ml-1 xl:ml-14 md:mr-4  lg:mr-52 xl:mr-96">
+        <div className='h-auto w-full md:w-1/3'>
+          <img src={image2} className='h-full w-full rounded-3xl' alt="Program 1"></img>
+        </div>
+        <div className='flex flex-col  md:text-center md:h-40  w-full'>
+        <div className='md:pb-6
+          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
+            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
+            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
+            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
+            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
+            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
+            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
+          </div>
+          <button className='btn-pin3 self-end'>Know More</button>
+        </div>
+      </div>
+      <div className="card bg-yellow-100 flex flex-col md:flex-row md:rounded-3xl md:flex-1 md:ml-0  lg:ml-16 xl:ml-52 md:mr-4  
+      lg:mr-24 xl:mr-52
+      ">
+        <div className='h-auto w-full md:w-1/3'>
+          <img src={image2} className='h-full w-full rounded-3xl' alt="Program 2"></img>
+        </div>
+        <div className='flex flex-col  md:text-center  md:h-40  w-full'>
+        <div className='md:pb-6
+          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
+            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
+            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
+            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
+            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
+            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
+            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
+          </div>
+          <button className='btn-pin3 self-end'>Know More</button>
+        </div>
+      </div>
+      <div className="card bg-yellow-100 flex flex-col md:flex-row  md:rounded-3xl md:flex-1  md:ml-0  lg:ml-52 xl:ml-96">
+        <div className='h-auto w-full md:w-1/3'>
+          <img src={image2} className='h-full w-full rounded-3xl' alt="Program 3"></img>
+        </div>
+        <div className='flex flex-col  md:text-center  md:h-40  w-full'>
+          <div className='md:pb-6
+          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
+            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
+            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
+            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
+            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
+            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
+            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
+          </div>
+          <button className='btn-pin3 self-end'>Know More</button>
+        </div>
+      </div>
+    </div>   
   
 
   <div className='flex flex-col justify-center w-full  pt-20  bg-cover z-10'
@@ -363,6 +421,7 @@ const Home = () => {
           </div>
          
         </div></div>
+        
         <div className='relative rounded-3xl w-3/12 flex-1 flex justify-center h-fit '>
         <div className=' h-fit flex flex-col w-6/12 py-7 items-left gap-5'>
           <div className='text-left text-3xl md:text-5xl'>Contact Us</div>
@@ -373,6 +432,13 @@ const Home = () => {
           </div>
          
         </div></div>
+        <div className='relative rounded-3xl w-3/12 flex-1 flex justify-center h-fit '>
+        <div className=' h-fit flex flex-col w-6/12 py-7 items-center '>
+          <div className='text-9xl'>SWS</div>
+          <div className='text-3xl'>Samarpit Ngo hai</div>
+          </div>
+         
+        </div>
        
       </div>
       <div className='flex  flex-wrap justify-center gap-40 mt-20'>
