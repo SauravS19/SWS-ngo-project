@@ -1,33 +1,9 @@
-.homecard{
-    content: "";
-   height: 100%;
-   box-shadow: 5px 5px 14px whitesmoke;
+.Container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* .homecard::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;left: 0;right: 0;background-color: #080808;
-    opacity: 0.2;
-    transform: scaleX(1);
-} */
-.homecard::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    border-radius: 13px;
-    bottom: 0;left: 0;right: 0;background-color: #21a99b;
-    opacity: 0.3;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all 0.4s;
-    z-index: 3;
-}
-.homecard:hover::before{
-    transform: scaleX(1);
-  
-    
-}
+
 
  .btn-pin {
         background-color: var(--bgOrange);
@@ -71,18 +47,9 @@
 
 
  .card {
-            
- 
-    width: fit-content;
- 
-  
- 
    border-radius: 50px;
-  
     cursor: pointer;
     transition: all 0.2s;
- 
-    
     position: relative;
     z-index: 1;   
         }
@@ -123,7 +90,7 @@ transform: scaleX(1);
     cursor: pointer;
     transition: all 0.5s;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transform: scaleX(0);
     position: relative;
     z-index: 1;  
@@ -138,7 +105,7 @@ transform: scaleX(1);
         right: 0;
         bottom: 0px;
         z-index: -1;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         transform: scaleX(0);
         visibility: hidden;
         transform-origin: left;
@@ -164,7 +131,6 @@ transform: scaleX(1);
     display:flex;
     flex-direction:column;
     color:rgb(247, 247, 247);
-    padding:2em;
     bottom:20%;
     left: 10%;
     z-index:5;
@@ -176,32 +142,6 @@ transform: scaleX(1);
    
 }
 
-/* .homecard2::before{
-    content: "";
-    position:absolute;
-    top: 0;
-   width: 92%;
-    bottom: 0;
-    align-items: center;
-    background-image: url(rainbow.jpeg);
-    
-    background-repeat: no-repeat;
-    opacity: 0;
-    transition: all 1.8s;
-}
-.homecard2:hover::before{ 
-    opacity: 1;
-    filter: blur(13px);
-  
-    
-}
-.homecard2:hover .align1{
-    transform:scale();
-    text-shadow: 1px 1px #090101;
-} */
-.align1{
-    left:580px;;
-}
 .slide-left{
    
     transform: scaleX(0);
@@ -209,8 +149,7 @@ transform: scaleX(1);
     transform-origin: right;
 }
 .slide-right{
-  
-  
+
     transform: scaleX(0);
     transition: all 0.8s;
     transform-origin: left;
@@ -220,14 +159,11 @@ transform: scaleX(1);
     transform: scale(1);
 }
 
-
-
 .second:hover .slide-right{
     transform: scale(1);
 }
-.slide-bottom{
-   
-    transform: scale(0);
+.slide-bottom{  
+   transform: scale(0);
     transition: all 0.8s;
     transform-origin: top;
 }
@@ -235,9 +171,6 @@ transform: scaleX(1);
     transform: scale(1);
 }
 
-
-
-   
 .blockglow::before , .blockglow::after{
     content: "";
     position:absolute;
