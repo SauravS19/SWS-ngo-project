@@ -15,10 +15,8 @@ import image2 from '../pages/img2.jpeg';
 import social from './empower.png'
 import envi from './environment.png'
 import tour from './tour-guide.png'
-import contactbg from './contact.png'
-import waves3 from './waves.jpg'
-import foot from './foot.png'
-import foot2 from './foot2.png'
+
+import foot2 from './foot2.jpeg'
 
 
 const Home = () => {
@@ -396,58 +394,60 @@ const Home = () => {
        
 </div>  
 
-<div className='flex flex-col flex-wrap w-full h-auto  bg-cover bg-center gap-5'
-       style={{backgroundImage:`url(${foot})`}}>
+<div className='flex flex-col flex-wrap w-full h-auto items-center bg-cover bg-top pb-10'
+   style={{backgroundImage:`url(${foot2})`}}>
  
-      <div className='flex flex-col md:flex-row items-center w-full h-auto justify-between '>
+      <div className='flex flex-col md:flex-row items-center w-10/12 h-auto gap-10'>
         
-      <div className='relative rounded-3xl w-3/12 flex-1 flex justify-center h-fit '>
-        <div className=' h-fit flex flex-col w-6/12 py-7 items-left gap-5'>
-          <div className='text-left  text-3xl md:text-5xl '>Programs</div>
+      <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
+        <div className=' h-fit flex flex-col w-auto  gap-5'>
+          <div className='text-left  text-xl md:text-4xl '>Programs</div>
           <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>Yoga</div>
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>Dance</div>
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>singing</div>
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>Yoga</div>
+          <div className='text-left text-sm sm:text-lg xl:text-xl'>Dance</div>
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>singing</div>
           </div>
          
         </div></div>
-        <div className='relative rounded-3xl w-3/12 flex-1 flex justify-center h-fit '>
-        <div className=' h-fit flex flex-col w-6/12 py-7 items-left gap-5'>
-          <div className='text-left text-3xl md:text-5xl '>what we do</div>
+        <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
+        <div className=' h-fit flex flex-col w-auto gap-5'>
+          <div className='text-left text-xl md:text-4xl '>what we do</div>
           <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>tourism</div>
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>social empowerment</div>
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>environment conserve</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>tourism</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>social empowerment</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>environment conserve</div>
           </div>
          
         </div></div>
-        
-        <div className='relative rounded-3xl w-3/12 flex-1 flex justify-center h-fit '>
-        <div className=' h-fit flex flex-col w-6/12 py-7 items-left gap-5'>
-          <div className='text-left text-3xl md:text-5xl'>Contact Us</div>
-          <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>5343434545</div>
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>djhgsjghhad@email.com</div>
-          <div className='text-left text-lg sm:text-xl   xl:text-2xl'>ganesh vihar padampur</div>
-          </div>
-         
-        </div></div>
-        <div className='relative rounded-3xl w-3/12 flex-1 flex justify-center h-fit '>
-        <div className=' h-fit flex flex-col w-6/12 py-7 items-center '>
+        <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
+        <div className=' h-fit flex flex-col w-6/12 items-center '>
           <div className='text-9xl'>SWS</div>
-          <div className='text-3xl'>Samarpit Ngo hai</div>
+          <div className='text-lg'>Samarpit Ngo hai</div>
+          <div className='flex justify-center gap-10 mt-5'>
+        <div><AiFillFacebook className='h-10 w-10 scale'></AiFillFacebook></div>
+        <div><AiFillLinkedin className='h-10 w-10 scale'></AiFillLinkedin></div>
+        <div><AiFillInstagram className='h-10 w-10 scale'></AiFillInstagram></div>
+        <div><AiFillYoutube className='h-10 w-10 scale'></AiFillYoutube></div>
+      </div>
+     
           </div>
          
         </div>
+        
+        <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
+        <div className=' h-fit flex flex-col w-auto gap-5'>
+          <div className='text-left text-xl md:text-4xl'>Contact Us</div>
+          <div className='relative flex flex-col gap-2 md:gap-5'> 
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>5343434545</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>djhgsjghhad@email.com</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>ganesh vihar padampur</div>
+          </div>
+        
+        </div></div>
+      
        
       </div>
-      <div className='flex  flex-wrap justify-center gap-40 mt-20'>
-        <div><AiFillFacebook className='h-16 w-16 scale'></AiFillFacebook></div>
-        <div><AiFillLinkedin className='h-16 w-16 scale'></AiFillLinkedin></div>
-        <div><AiFillInstagram className='h-16 w-16 scale'></AiFillInstagram></div>
-        <div><AiFillYoutube className='h-16 w-16 scale'></AiFillYoutube></div>
-      </div>
-     
+    
 </div>
 
 
