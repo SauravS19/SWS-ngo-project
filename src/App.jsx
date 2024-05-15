@@ -12,8 +12,15 @@ const Hero = React.lazy(()=> import("./components/Hero"))
 function App() {
 
   return (<>
-      <Navbar></Navbar>
-      <Home></Home>
+   <Navbar></Navbar>
+      <Routes> 
+        <Route path='/' element={<Suspense fallback={"loading"}><Home/></Suspense>}/>
+        <Route path='/about' element={<Suspense fallback={"loading"}><About/></Suspense>}/>
+        <Route path='/contact' element={<Suspense fallback={"loading"}><Contact/></Suspense>}/>
+        <Route path='/home' element={<Suspense fallback={"loading"}><Home/></Suspense>}/>
+        <Route path='/blogs' element={<Suspense fallback={"loading"}><Blogs/></Suspense>}/>
+        <Route path='/events' element={<Suspense fallback={"loading"}><Event/></Suspense>}/>
+     </Routes>
       </>
    
   )
