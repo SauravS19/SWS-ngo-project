@@ -13,7 +13,7 @@ function App() {
 
   return (<>
       <Navbar></Navbar>
-      <Home></Home>
+      <About></About>
       </>
    
   )
