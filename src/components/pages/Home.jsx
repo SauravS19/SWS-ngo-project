@@ -48,7 +48,7 @@ const Home = () => {
         
 
 
-      <div className=' flex  justify-center w-full h-full mt-20 bg-cover'
+      <div className='second flex  justify-center w-full h-full mt-20 bg-cover'
        style={{backgroundImage:`url(${blog})`,backgroundPosition:`center`}}>
     
       
@@ -97,7 +97,7 @@ const Home = () => {
                    <div className='bg-transparent relative h-full w-3/5'>
                     <img src={image2} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div className=' w-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center pt-5'>from the Director</div>
+                   <div className='slide-left w-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center pt-5'>from the Director</div>
                 </div>
               </div>
 
@@ -107,7 +107,7 @@ const Home = () => {
                    <div className='bg-transparent relative w-3/5 h-full'>
                     <img src={image2} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div className=' w-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center pt-5'>from the Director</div>
+                   <div className='slide-right w-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center pt-5'>from the Director</div>
                 </div>
                 {/* <div className='bg-transparent relative w-6/12 flex flex-col justify-center items-center '>
                 <div className='relative bg-transparent w-3/5'>
@@ -215,9 +215,9 @@ const Home = () => {
 {/* // <///////////////////////////////////////////////////////> */}
  {/* <div className='flex flex-col w-full h-auto mt-20 pb-10 px-40 bg-cover gap-5 '
        style={{backgroundImage:`url(${blob})`,backgroundPosition:`center`}}> */}
-    <div className='flex flex-col w-full h-auto mt-20 pb-10 px-32 md:justify-center  bg-cover gap-5 '
-       style={{backgroundImage:`url(${blob})`,backgroundPosition:`center`}}>
-      <div className='h-20 w-auto  text-6xl sm:text-7xl md:text-8xl  font-serif mb-20 md:w-1/4'>
+    <div className='flex flex-col w-full h-auto mt-20 pb-10 px-32 md:justify-center  bg-cover gap-10 '
+       style={{backgroundImage:`url(${blob})`,backgroundPosition:`left`}}>
+      <div className='h-fit w-auto  text-6xl sm:text-7xl md:text-8xl text-center font-serif  md:w-1/4'>
         Programms
       </div> 
       <div className="card bg-yellow-100 flex  flex-col md:flex-row w-auto md:rounded-3xl md:flex-1 md:ml-0  lg:ml-1 xl:ml-14 md:mr-4  lg:mr-52 xl:mr-96">

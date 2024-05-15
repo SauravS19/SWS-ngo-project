@@ -12,7 +12,7 @@ const Hero = React.lazy(()=> import("./components/Hero"))
 function App() {
 
   return (<>
-   <Navbar></Navbar>
+      <Navbar></Navbar>
       <Home></Home>
       </>
    
