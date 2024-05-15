@@ -22,9 +22,9 @@ import foot2 from './foot2.jpeg'
 const Home = () => {
   return (
 
-      <div className='Container  flex flex-col w-screen items-center'>
-      <div className='relative flex justify-center w-10/12 h-[48rem]'>
-          <div className='crousel bg-gray-500 relative flex w-full rounded-xl items-center bg-cover'>
+      <div className='Container  flex flex-col w-screen items-center mt-28'>
+      <div className='relative flex justify-center w-10/12 h-[40rem]'>
+          <div className='crousel bg-gray-500 relative flex w-full  rounded-xl items-center bg-cover'>
             <Carousel />
             <div className='homedata  w-3/12 p-0'>
               <div className='heading  text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
