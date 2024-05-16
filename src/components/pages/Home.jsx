@@ -31,7 +31,7 @@ import img8 from './img8.jpg'
 import img9 from './img9.jpg'
 import img10 from './img10.jpg'
 import img11 from './img11.jpg'
-
+import star from './star.png'
 
 const Home = () => {
   return (
@@ -79,24 +79,22 @@ const Home = () => {
                 </div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h- w-full justify-evenly blur-[1.5px]'>
-                  <div className=' w-28 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-20 rounded-full animate-bounce'>
                   <img src={pink} className='rounded-full w-full '></img>
                    </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-24 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
-                  <div className=' w-20 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-28 rounded-full animate-bounce'>
-                 <img src={Blue} className='rounded-full w-full '></img>
-                  </div>
+              
 
                </div> 
                 </div>
@@ -131,24 +129,22 @@ const Home = () => {
                 <p>With unwavering dedication, SMS employs a symphony of creative mediums—from captivating audio-visual productions to soul-stirring musical compositions and vibrant community events—to illuminate minds and ignite change.</p></div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h-32 w-full justify-evenly blur-[1.5px]'>
-                  <div className=' w-28 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-20 rounded-full animate-bounce'>
                   <img src={pink} className='rounded-full w-full '></img>
                    </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-24 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
-                  <div className=' w-20 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-28 rounded-full animate-bounce'>
-                 <img src={Blue} className='rounded-full w-full '></img>
-                  </div>
+                 
 
                </div> 
                 </div>
@@ -183,7 +179,7 @@ const Home = () => {
         <div className='h-4/5 pt-8'>
           <img src={envi}className='h-full'></img>
           </div>
-          <div className='text-center  text-white text-3xl'>Social Empowerment</div>
+          <div className='text-center  text-white text-3xl'>Environment Conservation</div>
         </div>
         </div>
         
@@ -200,7 +196,7 @@ const Home = () => {
         <div className='h-4/5 pt-8'>
         <img src={tour}className='h-full'></img>
           </div>
-          <div className='text-center  text-white text-3xl '>Social Empowerment</div>
+          <div className='text-center  text-white text-3xl '>Tourism</div>
         </div>
         </div>
        
@@ -270,14 +266,14 @@ Over two months, these selected participants received rigorous training in vario
     </div>   
   
 
-  <div className='flex flex-col justify-center w-full  pt-20  bg-cover z-10'
+  <div className='flex flex-col justify-center w-full  pt-20 gap-10 bg-cover z-10'
         style={{backgroundImage:`url(${wave2})`,backgroundPosition:`center`}}>
        <div className='h-20 w-auto text-6xl sm:text-7xl md:text-8xl font-serif pl-28 pb-28'>Gallery</div>
        <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-2 md:gap-4 mt-10 px-20 '>
 
        <div className=' bg-white relative rounded-3xl h-auto w-20 flex-1 boxes'>
        <div className='blockglow h-full '>
-        <img src={img2}className='w-full h-full rounded-3xl '></img>
+        <img src={img11}className='w-full h-full rounded-3xl '></img>
        </div>
       </div>
       <div className=' bg-white relative rounded-3xl h-auto w-auto flex-1 boxes'>
@@ -349,40 +345,40 @@ Over two months, these selected participants received rigorous training in vario
 
 </div>
      <div className=' relative bg-transparent flex h-24 w-full justify-evenly  blur-[1.5px] -z-10'>
-                  <div className=' w-28 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-20 rounded-full animate-bounce'>
                   <img src={pink} className='rounded-full w-full '></img>
                    </div>
                    <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-28 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
                   <div className=' w-24 rounded-full animate-bounce'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-28 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce'>
                  <img src={Blue} className='rounded-full w-full '></img>
                   </div>
                   <div className=' w-24 rounded-full animate-bounce'>
                    <img src={red} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-28 rounded-full animate-bounce'>
+                  <div className=' w-20 rounded-full animate-bounce'>
                   <img src={pink} className='rounded-full w-full '></img>
                    </div>
                    <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-24 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
-                  <div className=' w-28 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-24 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce'>
                  <img src={Blue} className='rounded-full w-full '></img>
                   </div>
 
@@ -390,32 +386,52 @@ Over two months, these selected participants received rigorous training in vario
        
 </div>  
 
-<div className='flex flex-col flex-wrap w-full h-auto items-center bg-cover bg-top pb-10'
-   style={{backgroundImage:`url(${foot2})`}}>
+<div className='flex flex-col flex-wrap w-full h-auto items-center body '>
+   <div className='bg-gradient-to-b from-sky-500 via-slate-50 to-slate-50 flex justify-center  w-full h-20 pd-10'>
+  <div className='flex items-end text text-3xl italic text-pink-900'>Samarpit Media Society</div>
+   </div>
  
-      <div className='flex flex-col md:flex-row items-center w-10/12 h-auto gap-10'>
-        
-      <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
+      <div className='flex flex-col md:flex-row items-center w-full h-auto gap-10 bg-cover   bg-center p-10'
+       style={{backgroundImage:`url(${star})`}}>
+    
+        <div className='relative rounded-3xl sm:w-full w-full  flex-1 flex bg-opacity-40 bg-blue-400 justify-center h-fit'>
         <div className=' h-fit flex flex-col w-auto  gap-5'>
-          <div className='text-left  text-xl md:text-4xl '>Programs</div>
+          <div className='text-left  text-xl md:text-4xl '>Programms</div>
           <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Yoga</div>
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Dance</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>singing</div>
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Yoga Training</div>
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Nanhi Muskan</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Nanhi Muskan</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Nanhi Muskan</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
+          
           </div>
          
         </div></div>
-        <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
+        <div className='relative rounded-3xl sm:w-full w-full  flex-1 flex bg-opacity-40 bg-blue-400 justify-center h-fit'>
+        <div className=' h-fit flex flex-col w-auto  gap-5'>
+          <div className='text-left  text-xl md:text-4xl '>What we do</div>
+          <div className='relative flex flex-col gap-2 md:gap-5'> 
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Social Empoverment</div>
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Environment Conservation</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Tourism</div>
+          </div>
+         
+        </div></div>
+    
+        
+        <div className='relative rounded-3xl  sm:w-full w-full flex-1 flex  bg-opacity-40 bg-blue-400 justify-center  h-fit '>
         <div className=' h-fit flex flex-col w-auto gap-5'>
-          <div className='text-left text-xl md:text-4xl '>what we do</div>
+          <div className='text-left text-xl md:text-4xl'>Contact Us</div>
           <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-sm sm:text-lg  italic xl:text-xl'>tourism</div>
-          <div className='text-left text-sm sm:text-lg  italic xl:text-xl'>social empowerment</div>
-          <div className='text-left text-sm sm:text-lg  italic xl:text-xl'>environment conserve</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>5343434545</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>djhgsjghhad@email.com</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>ganesh vihar padampur</div>
           </div>
-         
+        
         </div></div>
-        <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
+        <div className='relative rounded-3xl  sm:w-full w-full  flex-1 flex bg-opacity-40 bg-blue-400 justify-center h-fit '>
         <div className=' h-fit flex flex-col w-6/12 items-center '>
           <div className='text-9xl'>SWS</div>
           <div className='text-lg'>Samarpit Ngo hai</div>
@@ -429,17 +445,6 @@ Over two months, these selected participants received rigorous training in vario
           </div>
          
         </div>
-        
-        <div className='relative rounded-3xl w-3/12 flex-1 flex  h-fit '>
-        <div className=' h-fit flex flex-col w-auto gap-5'>
-          <div className='text-left text-xl md:text-4xl'>Contact Us</div>
-          <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>5343434545</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>djhgsjghhad@email.com</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>ganesh vihar padampur</div>
-          </div>
-        
-        </div></div>
       
        
       </div>
