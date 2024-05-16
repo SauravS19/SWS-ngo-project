@@ -65,7 +65,7 @@ const About = () => {
         
       </div>
       <div className='h-auto w-full flex flex-col items-center second gap-20'>
-<div className='bg-gray-500 w-full h-16'>
+       <div className='bg-gray-500 w-full h-16'>
          </div>
    <div className=' h-auto w-10/12 flex flex-col'>
    <div className=' w-full flex  h-72 gap-5'>
@@ -116,11 +116,8 @@ const About = () => {
      
     </div>
    </div>
-</div>
-      
-      
-      </div>
-      <div className='flex flex-col flex-wrap w-full h-auto items-center bg-cover bg-top mt-20 pb-10'
+
+   <div className='flex flex-col flex-wrap w-full h-auto items-center bg-cover bg-top mt-20 pb-10'
    style={{backgroundImage:`url(${foot2})`}}>
  
       <div className='flex flex-col md:flex-row items-center w-10/12 h-auto gap-10'>
@@ -175,9 +172,16 @@ const About = () => {
       </div>
     
 </div> 
+</div>
+      
+      
+      </div>
+    
       </>
+
+  
+
   );
 };
 
 export default About;
-
