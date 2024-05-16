@@ -3,10 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-// import image1 from '../assets/facebook.png'; // Import your images
-// import image2 from '../assets/instagram.png'; // Import your images
-// import image3 from '../assets/twitter.png'; // Import your images
-// import image4 from '../assets/youtube.png'; // Import your images
 
 import image1 from '../../assets/img1.png';
 import image2 from '../../assets/img3.png';
@@ -14,7 +10,7 @@ import image3 from '../../assets/img4.png';
 import image4 from '../../assets/img5.png';
 
 
-const Carousel = () => {
+const Crousel = () => {
   const slides = [
     {
       url: image1,
@@ -80,5 +76,5 @@ const Carousel = () => {
   );
 }
 
-export default Carousel;
+export default Crousel;
 

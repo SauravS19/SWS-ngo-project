@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Carousel from './Carousel'; // Corrected import statement
 import image2 from '../pages/img2.jpeg'; 
 import './About.css'
@@ -179,3 +180,4 @@ const About = () => {
 };
 
 export default About;
+

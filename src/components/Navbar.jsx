@@ -1,9 +1,12 @@
+
 import React, { useState } from 'react';
 import {  AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 
-function Navbar() {
+
+
+const  Navbar = ()=> {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const showSidebar = () => {
