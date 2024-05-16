@@ -70,7 +70,7 @@ const Home = () => {
                      samrapit ngo is good</div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h- w-full justify-evenly blur-[1.5px]'>
-                  <div className=' w-20 rounded-full animate-bounce'>
+                  <div className=' w-28 rounded-full animate-bounce'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
                   <div className=' w-24 rounded-full animate-bounce'>
@@ -128,7 +128,7 @@ const Home = () => {
                      samrapit ngo is good</div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h-32 w-full justify-evenly blur-[1.5px]'>
-                  <div className=' w-20 rounded-full animate-bounce'>
+                  <div className=' w-28 rounded-full animate-bounce'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
                   <div className=' w-24 rounded-full animate-bounce'>

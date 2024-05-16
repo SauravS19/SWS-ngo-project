@@ -1,27 +1,7 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-
-// const Navbar = () => {
-//   return (
-//     <div className="fixed -[999] w-full px-20 py-1.5 flex justify-between items-center z-50 bg-white">
-//        <div className='logo'>
-//       <div className='font-semibold uppercase text-5xl'>SWS</div>
-//        </div>
-//        <div className="links flex gap-10">
-//             <Link className='text-md capitalize font-semibold' to={"/home"}>Home</Link>
-//             <Link className='text-md capitalize font-semibold' to={"/about"}>About us</Link>
-//             <Link className='text-md capitalize font-semibold' to={"/blogs"}>Blogs</Link>
-//             <Link className='text-md capitalize font-semibold' to={"/events"}>Events</Link>
-//             <Link className='text-md capitalize font-semibold' to={"/contact"}>contact</Link>
-//        </div>
-//     </div>
-//   )
-// }
-
-// export default Navbar;
 import React, { useState } from 'react';
 import {  AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
-import logo from '../assets/youtube.png'
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -58,11 +38,11 @@ function Navbar() {
    {/* Render the sidebar only on screens larger than the phone size */}
    <ul className="hidden md:flex w-full h-12 justify-end items-center">
      <li className="mr-auto"></li>
-     <li><a href="#" className="px-4 py-2 text-black">Home</a></li>
-     <li><a href="#" className="px-4 py-2 text-black">About</a></li>
-     <li><a href="#" className="px-4 py-2 text-black">Events</a></li>
-     <li><a href="#" className="px-4 py-2 text-black">Gallery</a></li>
-     <li><a href="#" className="pl-4 py-2 text-black">Contact</a></li>
+     <li><Link href="#" className="px-4 py-2 text-black">Home</Link></li>
+     <li><Link to={'/about'} className="px-4 py-2 text-black">About</Link></li>
+     <li><Link href="#" className="px-4 py-2 text-black">Events</Link></li>
+     <li><Link href="#" className="px-4 py-2 text-black">Gallery</Link></li>
+     <li><Link href="#" className="pl-4 py-2 text-black">Contact</Link></li>
    
    </ul>
    {/* Render the sidebar on phone-sized screens */}
@@ -78,11 +58,11 @@ function Navbar() {
      <div><AiFillLinkedin className='h-8 w-8 scale'></AiFillLinkedin></div>
      <div><AiFillInstagram className='h-8 w-8 scale'></AiFillInstagram></div>
      <div><AiFillYoutube className='h-8 w-8 scale'></AiFillYoutube></div></div>
-     <li><a href="#" className="px-4 py-2 text-black">Home</a></li>
-     <li><a href="#" className="px-4 py-2 text-black">About</a></li>
-     <li><a href="#" className="px-4 py-2 text-black">Events</a></li>
-     <li><a href="#" className="px-4 py-2 text-black">Gallery</a></li>
-     <li><a href="#" className="px-4 py-2 text-black">Contact</a></li>
+     <li><Link href="#" className="px-4 py-2 text-black">Home</Link></li>
+     <li><Link to={'/about'} className="px-4 py-2 text-black">About</Link></li>
+     <li><Link href="#" className="px-4 py-2 text-black">Events</Link></li>
+     <li><Link href="#" className="px-4 py-2 text-black">Gallery</Link></li>
+     <li><Link href="#" className="px-4 py-2 text-black">Contact</Link></li>
    </ul>
  </div>
     </div>

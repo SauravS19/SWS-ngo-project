@@ -1,5 +1,4 @@
 .Container{
-   
     padding: 0;
     box-sizing: border-box;
 }
@@ -152,16 +151,19 @@ transform: scaleX(1);
 
     transform: scaleX(0);
     transition: all 0.8s;
+    
     transform-origin: left;
    
 }
 .second:hover .slide-left{
+  
     transform: scale(1);
 }
 
 .second:hover .slide-right{
     transform: scale(1);
 }
+
 .slide-bottom{  
    transform: scale(0);
     transition: all 0.8s;

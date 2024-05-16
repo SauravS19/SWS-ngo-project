@@ -8,7 +8,7 @@ const Contact = React.lazy(()=> import("./components/pages/Contact"))
 const Home = React.lazy(()=> import("./components/pages/Home"))
 const Blogs = React.lazy(()=> import("./components/pages/Blogs"))
 const Event = React.lazy(()=> import("./components/pages/Event"))
-const Hero = React.lazy(()=> import("./components/Hero"))
+
 function App() {
 
   return (<>
