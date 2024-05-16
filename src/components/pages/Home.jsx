@@ -15,8 +15,22 @@ import image2 from '../pages/img2.jpeg';
 import social from './empower.png'
 import envi from './environment.png'
 import tour from './tour-guide.png'
-
+import yoga from './yoga.jpg'
 import foot2 from './foot2.jpeg'
+import saath from './milesaath.jpg'
+import nanhi from './nanhimuskan.jpg'
+import img0 from './img0.jpg'
+import img1 from './img1.jpg'
+import img2 from './img2.jpg'
+import img3 from './img3.jpg'
+import img4 from './img4.jpg'
+import img5 from './img5.jpg'
+import img6 from './img6.jpg'
+import img7 from './img7.jpg'
+import img8 from './img8.jpg'
+import img9 from './img9.jpg'
+import img10 from './img10.jpg'
+import img11 from './img11.jpg'
 
 
 const Home = () => {
@@ -24,15 +38,15 @@ const Home = () => {
 
       <div className='Container  flex flex-col w-screen items-center mt-28'>
       <div className='relative flex justify-center w-10/12 h-[40rem]'>
-          <div className='crousel bg-gray-500 relative flex w-full  rounded-xl items-center bg-cover'>
+          <div className='crousel relative flex w-full  rounded-xl items-center bg-cover'>
             <Carousel />
             <div className='homedata  w-3/12 p-0'>
-              <div className='heading  text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
+              <div className='heading italic text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
                 Empowering<br />
                 Communities<br />
                 Together
               </div>
-              <div className='w-full italic text-white'>
+              <div className='w-full italic text- text-white'>
                 We are dedicated to making a difference in the lives of people through our various initiatives.
               </div>
               <button className='btn-pin'>Learn More</button>
@@ -59,15 +73,10 @@ const Home = () => {
                <div className='w-6/12 flex flex-col justify-between relative  bg-transparent'>
                 
                 <div className='bg-transparent flex justify-center h-full relative w-full text-left  z-10'>{/*pt-12  pl-28*/}
-                <div className='w-3/5 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>samrapit ngo is good 
-                 samrapit ngo is good
-                 samrapit ngo is good
-                  samrapit ngo is good
-
-                   samrapit ngo is good
-                    samrapit ngo is good
-                    v
-                     samrapit ngo is good</div>
+                <div className='w-3/5 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
+                <p className='italic text-sky-700'>"Protecting nature is not just a choice; it's our responsibility. Together, let's safeguard our planet for a sustainable future."</p><br></br>
+                <p>Samarpit Media Society (SMS) stands as a beacon of hope and progress in Uttarakhand, weaving a tapestry of transformative initiatives across environmental conservation, tourism promotion, and social empowerment.</p>
+                </div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h- w-full justify-evenly blur-[1.5px]'>
                   <div className=' w-28 rounded-full animate-bounce'>
@@ -93,9 +102,9 @@ const Home = () => {
                 </div>
                 <div className='bg-transparent relative w-6/12 flex h-full flex-col  items-center'>
                    <div className='bg-transparent relative h-full w-3/5'>
-                    <img src={image2} className=' w-full h-full rounded-3xl '></img>
+                    <img src={img4} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div className='slide-left w-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center pt-5'>from the Director</div>
+                   <div className='slide-left  w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center italic pt-5'>~ Transforming lives daily</div>
                 </div>
               </div>
 
@@ -103,9 +112,9 @@ const Home = () => {
               <div className=' h-full mt-5 flex bg-transparent'>
               <div className='bg-transparent relative w-6/12 flex flex-col h-full items-center'>
                    <div className='bg-transparent relative w-3/5 h-full'>
-                    <img src={image2} className=' w-full h-full rounded-3xl '></img>
+                    <img src={img10} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div className='slide-right w-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center pt-5'>from the Director</div>
+                   <div className='slide-right w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800 italic text-center pt-5'>~ Together for change</div>
                 </div>
                 {/* <div className='bg-transparent relative w-6/12 flex flex-col justify-center items-center '>
                 <div className='relative bg-transparent w-3/5'>
@@ -117,15 +126,9 @@ const Home = () => {
                 <div className='w-6/12 flex flex-col justify-between relative  bg-transparent'>
                 
                 <div className='bg-transparent flex justify-center h-full relative w-full text-left  z-10'>{/*pt-12  pl-28*/}
-                <div className='w-3/5 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>samrapit ngo is good 
-                 samrapit ngo is good
-                 samrapit ngo is good
-                  samrapit ngo is good
-
-                   samrapit ngo is good
-                    samrapit ngo is good
-                    v
-                     samrapit ngo is good</div>
+                <div className='w-3/5 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
+                <p className='italic text-sky-700'>“The meaning of life is to find your gift. The purpose of life is to give it away.”</p><br></br>
+                <p>With unwavering dedication, SMS employs a symphony of creative mediums—from captivating audio-visual productions to soul-stirring musical compositions and vibrant community events—to illuminate minds and ignite change.</p></div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h-32 w-full justify-evenly blur-[1.5px]'>
                   <div className=' w-28 rounded-full animate-bounce'>
@@ -157,7 +160,9 @@ const Home = () => {
      <div className='text1 flex justify-center w-full h-28 sm:h-32 md:h-40 lg:h-48 xl:h-56 bg-top bg-cover'
       style={{backgroundImage:`url(${wave})`}} >
     <div className='slide-bottom relative w-full text-center text-xl self-end bg-transparent'>
-           sky is blue hahahaha
+         <p className='italic font-medium text-violet-900'>“It is not how much we give, but how much love is put in the giving.”<br></br>
+~Mother Teresa
+</p>
     </div>
      </div>
      <div className='flex flex-col w-full h-auto  pb-14 pr-24 pl-24'>
@@ -166,42 +171,36 @@ const Home = () => {
       </div>
       <div className='w-full  h-auto  mt-10 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  text-right'>
                  
-                  dldjlk;djlksjdkjdljasdjlsajdlksajdlksajd
-                  dsdlkkjdlkjdlkjsjsldjlsjdlkjsdljlkdjlksajdsa
-                  dsalkdjsalkdjlksajdlksajdsakldjlksajdlksajdlksajdkl
-                  dlsdjlsakdjlksajdlksajkdasjdljsalkdjaslkdjlask
-                  hjhdljhdljhdkdkjhdkshkdhkjdh
-                  dslkdjljdlksajdjslkdjljd
-                  sdljdlkjdlkjkldjlkjjs'dljsa'lkdjlskaj
-                  dldjlk;djlksjdkjdljasdjlsajdlksajdlksajd
-                  dsdlkkjdlkjdlkjsjsldjlsjdlkjsdljlkdjlksajdsa
-                  dsalkdjsalkdjlksajdlksajdsakldjlksajdlksajdlksajdkl
+        
+        <p>Mission: Samarpit Media Society (SMS) strives to foster an enlightened and responsible society by addressing social, environmental, and cultural challenges through creative initiatives, raising awareness, inspiring action, and empowering communities.</p><br></br>
+     <p>Vision: SMS envisions a future where Uttarakhand thrives as a model of sustainable progress, achieved through inclusive development, community empowerment, and global inspiration, paving the way for a brighter tomorrow for all.
+</p>
       </div>
       <div className='flex flex-col md:flex-row w-auto h-auto gap-x-24 md:justify-center items-center gap-y-7   mt-10 '>
 
         <div className='bg-green-500 relative rounded-3xl flex-1 md:w-auto w-64 md:h-max boxes'>
-        <div className='blockglow flex  h-64 md:h-auto md:w-auto w-64 flex-col items-center'>
-        <div className='h-3/5 pt-8'>
-          <img src={envi}className='h-full '></img>
+        <div className='blockglow flex  h-auto md:h-80 md:w-auto w-64 flex-col items-center'>
+        <div className='h-4/5 pt-8'>
+          <img src={envi}className='h-full'></img>
           </div>
-          <div className='text-center  text-white '>Social Empowerment</div>
+          <div className='text-center  text-white text-3xl'>Social Empowerment</div>
         </div>
         </div>
         
         <div className='bg-orange-500 relative rounded-3xl flex-1 md:w-auto w-64 md:h-max boxes'>
-        <div className='blockglow flex  h-64 md:h-auto md:w-auto w-64 flex-col items-center'>
-        <div className='h-3/5 pt-8'>
+        <div className='blockglow flex   h-auto md:h-80 md:w-auto w-64 flex-col items-center'>
+        <div className='h-4/5 pt-8'>
           <img src={social}className='h-full '></img>
           </div>
-          <div className='text-center  text-white '>Social Empowerment</div>
+          <div className='text-center  text-white text-3xl'>Social Empowerment</div>
         </div>
         </div>
         <div className='bg-blue-500 relative rounded-3xl flex-1 md:w-auto w-64 md:h-max  boxes'>
-        <div className='blockglow flex  h-64 md:h-auto md:w-auto w-64 flex-col items-center'>
-        <div className='h-3/5 pt-8'>
+        <div className='blockglow flex  h-auto md:h-80 md:w-auto w-64 flex-col items-center'>
+        <div className='h-4/5 pt-8'>
         <img src={tour}className='h-full'></img>
           </div>
-          <div className='text-center  text-white '>Social Empowerment</div>
+          <div className='text-center  text-white text-3xl '>Social Empowerment</div>
         </div>
         </div>
        
@@ -220,17 +219,16 @@ const Home = () => {
       </div> 
       <div className="card bg-yellow-100 flex  flex-col md:flex-row w-auto md:rounded-3xl md:flex-1 md:ml-0  lg:ml-1 xl:ml-14 md:mr-4  lg:mr-52 xl:mr-96">
         <div className='h-auto w-full md:w-1/3'>
-          <img src={image2} className='h-full w-full rounded-3xl' alt="Program 1"></img>
+          <img src={nanhi} className='h-full w-full rounded-3xl' alt="Program 1"></img>
         </div>
         <div className='flex flex-col  md:text-center md:h-40  w-full'>
         <div className='md:pb-6
           h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
-            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
-            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
-            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
-            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
-            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
-            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
+          <p className='text-xl text-center  w-full'>Nanhi Muskaan - 3rd Dec 2012</p> 
+           <br></br>
+The program organized for physically and mentally disabled children from 13 districts of Uttarakhand sounds both heartwarming and impactful. Providing them with a platform aimed to integrate these often-neglected children into the broader societal fabric.
+Beginning with a visit to an ashram in Haridwar, the children participate in the Holy Ganga Aarti, a deeply spiritual and culturally significant experience. This likely provided them not only with a sense of belonging but also a chance to engage with their spirituality in a meaningful way.
+
           </div>
           <button className='btn-pin3 self-end'>Know More</button>
         </div>
@@ -239,34 +237,32 @@ const Home = () => {
       lg:mr-24 xl:mr-52
       ">
         <div className='h-auto w-full md:w-1/3'>
-          <img src={image2} className='h-full w-full rounded-3xl' alt="Program 2"></img>
+          <img src={saath} className='h-full w-full rounded-3xl' alt="Program 2"></img>
         </div>
         <div className='flex flex-col  md:text-center  md:h-40  w-full'>
         <div className='md:pb-6
           h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
-            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
-            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
-            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
-            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
-            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
-            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
+            <p className='text-xl text-center  w-full'>MILE SATH TUMAHARA -  30th Sep 2012</p> 
+           <br></br>
+           The event "Mile Sath Tumahara" was a heartwarming showcase of talent and inclusivity, bringing together individuals from various marginalized groups in society. Organized by your society, the event aimed to provide a platform for disabled, differently-abled, and neglected individuals to showcase their talents in music and dance.
+Over two months, these selected participants received rigorous training in various art forms such as dance, song, drama, and even a fashion show. This training not only honed their artistic skills but also served as a form of empowerment and rehabilitation.
+
+
           </div>
           <button className='btn-pin3 self-end'>Know More</button>
         </div>
       </div>
       <div className="card bg-yellow-100 flex flex-col md:flex-row  md:rounded-3xl md:flex-1  md:ml-0  lg:ml-52 xl:ml-96">
         <div className='h-auto w-full md:w-1/3'>
-          <img src={image2} className='h-full w-full rounded-3xl' alt="Program 3"></img>
+          <img src={yoga} className='h-full w-full rounded-3xl' alt="Program 3"></img>
         </div>
         <div className='flex flex-col  md:text-center  md:h-40  w-full'>
           <div className='md:pb-6
           h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
-            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
-            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
-            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
-            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
-            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
-            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
+           <p className='text-xl text-center  w-full'>Yoga Training Camp - 19th Feb 2014</p> 
+           <br></br>
+          The week-long Yoga Training Programme organized by Samarpit Media Society at Max Super Speciality Hospital was a commendable endeavour aimed at nurturing holistic well-being among healthcare professionals. By seamlessly integrating theory with practical sessions, the initiative empowered doctors and nurses with invaluable tools to bolster their physical and mental resilience.
+
           </div>
           <button className='btn-pin3 self-end'>Know More</button>
         </div>
@@ -277,26 +273,26 @@ const Home = () => {
   <div className='flex flex-col justify-center w-full  pt-20  bg-cover z-10'
         style={{backgroundImage:`url(${wave2})`,backgroundPosition:`center`}}>
        <div className='h-20 w-auto text-6xl sm:text-7xl md:text-8xl font-serif pl-28 pb-28'>Gallery</div>
-       <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-3 md:gap-5 mt-10 px-20 '>
+       <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-2 md:gap-4 mt-10 px-20 '>
 
        <div className=' bg-white relative rounded-3xl h-auto w-20 flex-1 boxes'>
        <div className='blockglow h-full '>
-        <img src={image2}className='w-full h-full rounded-3xl '></img>
+        <img src={img2}className='w-full h-full rounded-3xl '></img>
        </div>
       </div>
       <div className=' bg-white relative rounded-3xl h-auto w-auto flex-1 boxes'>
        <div className='blockglow h-full'>
-        <img src={image2}className='w-full h-full rounded-3xl '></img>
+        <img src={img10}className='w-full h-full rounded-3xl '></img>
        </div>
       </div>
       <div className=' bg-white relative rounded-3xl h-auto flex-1 boxes'>
        <div className='blockglow h-full'>
-        <img src={image2}className='w-full h-full rounded-3xl '></img>
+        <img src={img9}className='w-full h-full rounded-3xl '></img>
        </div>
       </div>
       <div className=' bg-white relative rounded-3xl h-auto flex-1 boxes'>
        <div className='blockglow h-full'>
-        <img src={image2}className='w-full h-full rounded-3xl '></img>
+        <img src={img8}className='w-full h-full rounded-3xl '></img>
        </div>
       </div>
     
@@ -308,22 +304,22 @@ const Home = () => {
 
 <div className=' bg-white relative rounded-3xl h-auto w-20 flex-1 boxes'>
 <div className='blockglow h-full '>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img7}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 <div className=' bg-white relative rounded-3xl h-auto w-auto flex-1 boxes'>
 <div className='blockglow h-full'>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img6}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 <div className=' bg-white relative rounded-3xl h-auto flex-1 boxes'>
 <div className='blockglow h-full'>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img5}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 <div className=' bg-white relative rounded-3xl h-auto flex-1 boxes'>
 <div className='blockglow h-full'>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img4}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 
@@ -332,22 +328,22 @@ const Home = () => {
 
 <div className=' bg-white relative rounded-3xl h-auto w-20 flex-1 boxes'>
 <div className='blockglow h-full '>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img3}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 <div className=' bg-white relative rounded-3xl h-auto w-auto flex-1 boxes'>
 <div className='blockglow h-full'>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img2}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 <div className=' bg-white relative rounded-3xl h-auto flex-1 boxes'>
 <div className='blockglow h-full'>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img1}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 <div className=' bg-white relative rounded-3xl h-auto flex-1 boxes'>
 <div className='blockglow h-full'>
- <img src={image2}className='w-full h-full rounded-3xl '></img>
+ <img src={img0}className='w-full h-full rounded-3xl '></img>
 </div>
 </div>
 
@@ -403,9 +399,9 @@ const Home = () => {
         <div className=' h-fit flex flex-col w-auto  gap-5'>
           <div className='text-left  text-xl md:text-4xl '>Programs</div>
           <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-sm sm:text-lg  xl:text-xl'>Yoga</div>
-          <div className='text-left text-sm sm:text-lg xl:text-xl'>Dance</div>
-          <div className='text-left text-sm sm:text-lg  xl:text-xl'>singing</div>
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Yoga</div>
+          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Dance</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>singing</div>
           </div>
          
         </div></div>
@@ -413,9 +409,9 @@ const Home = () => {
         <div className=' h-fit flex flex-col w-auto gap-5'>
           <div className='text-left text-xl md:text-4xl '>what we do</div>
           <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-sm sm:text-lg   xl:text-xl'>tourism</div>
-          <div className='text-left text-sm sm:text-lg   xl:text-xl'>social empowerment</div>
-          <div className='text-left text-sm sm:text-lg   xl:text-xl'>environment conserve</div>
+          <div className='text-left text-sm sm:text-lg  italic xl:text-xl'>tourism</div>
+          <div className='text-left text-sm sm:text-lg  italic xl:text-xl'>social empowerment</div>
+          <div className='text-left text-sm sm:text-lg  italic xl:text-xl'>environment conserve</div>
           </div>
          
         </div></div>
@@ -438,9 +434,9 @@ const Home = () => {
         <div className=' h-fit flex flex-col w-auto gap-5'>
           <div className='text-left text-xl md:text-4xl'>Contact Us</div>
           <div className='relative flex flex-col gap-2 md:gap-5'> 
-          <div className='text-left text-sm sm:text-lg   xl:text-xl'>5343434545</div>
-          <div className='text-left text-sm sm:text-lg   xl:text-xl'>djhgsjghhad@email.com</div>
-          <div className='text-left text-sm sm:text-lg   xl:text-xl'>ganesh vihar padampur</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>5343434545</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>djhgsjghhad@email.com</div>
+          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>ganesh vihar padampur</div>
           </div>
         
         </div></div>

@@ -82,6 +82,7 @@ transform: scaleX(1);
 .btn-pin3 {
     background-color: var(--bgOrange);
     width: fit-content;
+    margin-left: 2px;
     color:black;
     background-color: rgb(163, 248, 144);
     padding: 0.3rem 1rem;

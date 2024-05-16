@@ -19,7 +19,7 @@ const About = () => {
               </div>
      
      
-      <div className='text text-4xl'>from the Director</div>
+      <div className='text text-4xl italic text-violet-800'>from the Director</div>
       
              
              
@@ -28,30 +28,21 @@ const About = () => {
         <div className='flex flex-col  h-auto w-full'>
         <div className='
           h-auto w-auto text-center'>
-            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
-            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
-            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
-            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
-            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
-            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
-            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
-            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
-            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
-            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
-            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
-            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
-            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfk
-            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
-            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
-            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
-            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
-            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
-            kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
-            bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
-            slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
-            hfsdhfhskjldfhklsjfhskljfhsklfjskdlhfskldj
-            fhskldfhklsdjhfklsjhfkljshfklsjhfklshfklshfk
-            jsdhfksdjfjksdhfkjdshfkjsdjkfsdfsdhfjkfhsd
+          "Protecting nature is not just a choice; it's our responsibility. Together, let's safeguard our planet for a sustainable future."
+Established in 2012, Samarpit Media Society (SMS) stands as a beacon of hope and progress in Uttarakhand, weaving a tapestry of transformative initiatives across environmental conservation, tourism promotion, and social empowerment.
+
+With unwavering dedication, SMS employs a symphony of creative mediums—from captivating audio-visual productions to soul-stirring musical compositions and vibrant community events—to illuminate minds and ignite change.
+
+
+
+
+WHAT WE DO (MISSION)
+
+Mission: Samarpit Media Society (SMS) strives to foster an enlightened and responsible society by addressing social, environmental, and cultural challenges through creative initiatives, raising awareness, inspiring action, and empowering communities.
+
+Vision: SMS envisions a future where Uttarakhand thrives as a model of sustainable progress, achieved through inclusive development, community empowerment, and global inspiration, paving the way for a brighter tomorrow for all.
+
+
       
           </div>
        

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import {  AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-
+import logo1 from './pages/logo.jpg';
 
 
 
@@ -19,7 +19,7 @@ const  Navbar = ()=> {
 
   return (
     <div className='flex fixed top-0 w-full justify-center bg-white shadow-md z-50'>
-    <div className='w-36 h-auto bg-gray-500'></div>
+    <img src={logo1} className=' h-[88px]'></img>
       <div className=" flex flex-col items-center top-0 w-9/12 bg-white shadow-md ">
  
     <div className='flex  flex-wrap justify-end w-full items-center gap-10  mt-2'>
