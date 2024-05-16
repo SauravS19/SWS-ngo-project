@@ -10,7 +10,7 @@ import blog from './blob3.jpeg'
 import blob from './blob.jpeg'
 import wave from './slide.png'
 import wave2 from './slide2.png'
-import Carousel from './Crousel.jsx'
+import Carousel from './Carousel.jsx'
 import image2 from '../pages/img2.jpeg'; 
 import social from './empower.png'
 import envi from './environment.png'

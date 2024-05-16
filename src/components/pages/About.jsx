@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './Crousel'; // Corrected import statement
+import Carousel from './Carousel'; // Corrected import statement
 import image2 from '../pages/img2.jpeg'; 
 import './About.css'
 import './home.css'
