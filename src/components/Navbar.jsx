@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import {  AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import logo1 from '../../assets/icons/logo.jpg'
+import logo1 from '../assets/icons/logo.jpg'
 
 
 
@@ -43,9 +43,9 @@ const  Navbar = ()=> {
      <li className="mr-auto"></li>
      <li><Link href="#" className="px-4 py-2 text-black">Home</Link></li>
      <li><Link to={'/about'} className="px-4 py-2 text-black">About</Link></li>
-     <li><Link to={'/blogs'} className="px-4 py-2 text-black">Events</Link></li>
-     <li><Link href="#" className="px-4 py-2 text-black">Gallery</Link></li>
-     <li><Link href="#" className="pl-4 py-2 text-black">Contact</Link></li>
+     <li><Link to={'/events'} className="px-4 py-2 text-black">Events</Link></li>
+     <li><Link  to={'/blogs'} className="px-4 py-2 text-black">Gallery</Link></li>
+     <li><Link  to={'/contact'} className="pl-4 py-2 text-black">Contact</Link></li>
    
    </ul>
    {/* Render the sidebar on phone-sized screens */}
@@ -63,9 +63,9 @@ const  Navbar = ()=> {
      <div><AiFillYoutube className='h-8 w-8 scale'></AiFillYoutube></div></div>
      <li><Link href="#" className="px-4 py-2 text-black">Home</Link></li>
      <li><Link to={'/about'} className="px-4 py-2 text-black">About</Link></li>
-     <li><Link to={'/blogs'} className="px-4 py-2 text-black">Events</Link></li>
-     <li><Link href="#" className="px-4 py-2 text-black">Gallery</Link></li>
-     <li><Link href="#" className="px-4 py-2 text-black">Contact</Link></li>
+     <li><Link to={'/events'} className="px-4 py-2 text-black">Events</Link></li>
+     <li><Link to={'/blogs'} className="px-4 py-2 text-black">Gallery</Link></li>
+     <li><Link to={'/contact'} className="px-4 py-2 text-black">Contact</Link></li>
    </ul>
  </div>
     </div>

@@ -1,0 +1,24 @@
+.text{
+  
+    position: relative;
+
+}
+.text::after{
+    content: '|';
+    position: absolute;
+    right: -1px;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    width: 100%;
+   
+}
+.body:hover .text::after{
+    animation: typing 3s steps(17) forwards;
+   
+  
+}
+@keyframes typing {
+    to{
+    width: 0%;
+    }
+}

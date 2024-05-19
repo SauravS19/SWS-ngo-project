@@ -20,6 +20,7 @@ import img6 from '../../assets/gallery/img6.jpg';
 import img7 from '../../assets/gallery/img7.jpg';
 import img8 from '../../assets/gallery/img8.jpg';
 import img9 from '../../assets/gallery/img9.jpg';
+import Foot from './footer';
 
 const Blogs = () => {
   const images = [
@@ -53,6 +54,7 @@ const Blogs = () => {
           ))}
         </div>
       </div>
+      <Foot></Foot>
     </div>
   );
 };

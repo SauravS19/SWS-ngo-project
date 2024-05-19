@@ -5,7 +5,8 @@ import Carousel from './Carousel';
 import image2 from '../../assets/gallery/img0.jpg';
 
 import './About.css';
-import './home.css';
+
+import Foot from './footer';
 
 Modal.setAppElement('#root'); // Ensures accessibility by attaching modal to the root element
 
@@ -24,7 +25,7 @@ const About = () => {
   };
 
   return (
-    <div className='container body flex mt-28 flex-col w-screen items-center gap-10'>
+    <div className=' body flex mt-28 flex-col w-full items-center gap-10'>
       <div className='header h-20 pb-20 w-auto bg-transparent text-6xl sm:text-7xl md:text-8xl font-serif'>
         About Us
       </div>
@@ -116,52 +117,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className='flex flex-col flex-wrap w-full h-auto items-center bg-cover bg-top mt-20 pb-10'>
-          <div className='flex flex-col md:flex-row items-center w-10/12 h-auto gap-10'>
-            <div className='relative rounded-3xl w-3/12 flex-1 flex h-fit'>
-              <div className='h-fit flex flex-col w-auto gap-5'>
-                <div className='text-left text-xl md:text-4xl'>Programs</div>
-                <div className='relative flex flex-col gap-2 md:gap-5'>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>Yoga</div>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>Dance</div>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>Singing</div>
-                </div>
-              </div>
-            </div>
-            <div className='relative rounded-3xl w-3/12 flex-1 flex h-fit'>
-              <div className='h-fit flex flex-col w-auto gap-5'>
-                <div className='text-left text-xl md:text-4xl'>What We Do</div>
-                <div className='relative flex flex-col gap-2 md:gap-5'>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>Tourism</div>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>Social Empowerment</div>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>Environment Conservation</div>
-                </div>
-              </div>
-            </div>
-            <div className='relative rounded-3xl w-3/12 flex-1 flex h-fit'>
-              <div className='h-fit flex flex-col w-6/12 items-center'>
-                <div className='text-9xl'>SWS</div>
-                <div className='text-lg'>Samarpit NGO</div>
-                <div className='flex justify-center gap-10 mt-5'>
-                  <AiFillFacebook className='h-10 w-10' />
-                  <AiFillLinkedin className='h-10 w-10' />
-                  <AiFillInstagram className='h-10 w-10' />
-                  <AiFillYoutube className='h-10 w-10' />
-                </div>
-              </div>
-            </div>
-            <div className='relative rounded-3xl w-3/12 flex-1 flex h-fit'>
-              <div className='h-fit flex flex-col w-auto gap-5'>
-                <div className='text-left text-xl md:text-4xl'>Contact Us</div>
-                <div className='relative flex flex-col gap-2 md:gap-5'>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>5343434545</div>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>djhgsjghhad@email.com</div>
-                  <div className='text-left text-sm sm:text-lg xl:text-xl'>Ganesh Vihar Padampur</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      
       </div>
 
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className='Modal' overlayClassName='Overlay'>
@@ -170,7 +126,12 @@ const About = () => {
         </button>
         <img src={modalImage} className='h-full w-full' alt='Full Size' />
       </Modal>
+
+
+
+      <Foot></Foot>
     </div>
+   
   );
 };
 
