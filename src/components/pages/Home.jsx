@@ -40,7 +40,7 @@ const Home = () => {
       <div className='relative flex justify-center w-10/12 h-[40rem]'>
           <div className='crousel relative flex w-full  rounded-xl items-center bg-cover'>
             <Carousel />
-            <div className='homedata  w-3/12 p-0'>
+            <div className='homedata  w-5/12 sm:w-3/12 '>
               <div className='heading italic text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
                 Empowering<br />
                 Communities<br />
@@ -98,8 +98,8 @@ const Home = () => {
 
                </div> 
                 </div>
-                <div className='bg-transparent relative w-6/12 flex h-full flex-col  items-center'>
-                   <div className='bg-transparent relative h-full w-3/5'>
+                <div className='bg-transparent relative w-4/5 sm:w-6/12 flex h-full flex-col  items-center'>
+                   <div className='bg-transparent relative h-3/5 sm:h-3/4  xl:h-full w-4/5 sm:w-3/5'>
                     <img src={img4} className=' w-full h-full rounded-3xl '></img>
                    </div>
                    <div className='slide-left  w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center italic pt-5'>~ Transforming lives daily</div>
@@ -108,8 +108,8 @@ const Home = () => {
 
 
               <div className=' h-full mt-5 flex bg-transparent'>
-              <div className='bg-transparent relative w-6/12 flex flex-col h-full items-center'>
-                   <div className='bg-transparent relative w-3/5 h-full'>
+              <div className='bg-transparent relative  w-4/5 sm:w-6/12  flex flex-col h-full items-center'>
+                   <div className='bg-transparent relative h-3/5 sm:h-3/4  xl:h-full w-4/5 sm:w-3/5'>
                     <img src={img10} className=' w-full h-full rounded-3xl '></img>
                    </div>
                    <div className='slide-right w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800 italic text-center pt-5'>~ Together for change</div>
@@ -172,31 +172,31 @@ const Home = () => {
      <p>Vision: SMS envisions a future where Uttarakhand thrives as a model of sustainable progress, achieved through inclusive development, community empowerment, and global inspiration, paving the way for a brighter tomorrow for all.
 </p>
       </div>
-      <div className='flex flex-col md:flex-row w-auto h-auto gap-x-24 md:justify-center items-center gap-y-7   mt-10 '>
+      <div className='flex flex-col md:flex-row w-auto h-auto md:gap-x-5 xl:gap-x-24 md:justify-center items-center gap-y-7   mt-10 '>
 
         <div className='bg-green-500 relative rounded-3xl flex-1 md:w-auto w-64 md:h-max boxes'>
-        <div className='blockglow flex  h-auto md:h-80 md:w-auto w-64 flex-col items-center'>
-        <div className='h-4/5 pt-8'>
+        <div className='blockglow flex  h-60 md:h-80 md:w-auto w-64 flex-col items-center'>
+        <div className='h-3/4 sm:h-4/5 pt-8'>
           <img src={envi}className='h-full'></img>
           </div>
-          <div className='text-center  text-white text-3xl'>Environment Conservation</div>
+          <div className='text-center  text-white text-xl  xl:text-2xl 2xl:text-3xl'>Environment Conservation</div>
         </div>
         </div>
         
         <div className='bg-orange-500 relative rounded-3xl flex-1 md:w-auto w-64 md:h-max boxes'>
-        <div className='blockglow flex   h-auto md:h-80 md:w-auto w-64 flex-col items-center'>
-        <div className='h-4/5 pt-8'>
+        <div className='blockglow flex    h-60 md:h-80 md:w-auto w-64 flex-col items-center'>
+        <div className='h-3/4 sm:h-4/5 pt-8'>
           <img src={social}className='h-full '></img>
           </div>
-          <div className='text-center  text-white text-3xl'>Social Empowerment</div>
+          <div className='text-center  text-white text-xl  xl:text-2xl 2xl:text-3xl'>Social Empowerment</div>
         </div>
         </div>
         <div className='bg-blue-500 relative rounded-3xl flex-1 md:w-auto w-64 md:h-max  boxes'>
-        <div className='blockglow flex  h-auto md:h-80 md:w-auto w-64 flex-col items-center'>
-        <div className='h-4/5 pt-8'>
+        <div className='blockglow flex   h-60 md:h-80 md:w-auto w-64 flex-col items-center'>
+        <div className='h-3/4 sm:h-4/5 pt-8'>
         <img src={tour}className='h-full'></img>
           </div>
-          <div className='text-center  text-white text-3xl '>Tourism</div>
+          <div className='text-center  text-white text-xl  xl:text-2xl 2xl:text-3xl '>Tourism</div>
         </div>
         </div>
        
@@ -208,60 +208,77 @@ const Home = () => {
 {/* // <///////////////////////////////////////////////////////> */}
  {/* <div className='flex flex-col w-full h-auto mt-20 pb-10 px-40 bg-cover gap-5 '
        style={{backgroundImage:`url(${blob})`,backgroundPosition:`center`}}> */}
-    <div className='flex flex-col w-full h-auto mt-20 pb-10 px-32 md:justify-center  bg-cover gap-10 '
+    <div className='flex flex-col w-full h-auto mt-20 pb-10 px-32 md:justify-center justify-center bg-cover gap-10 '
        style={{backgroundImage:`url(${blob})`,backgroundPosition:`left`}}>
       <div className='h-fit w-auto  text-6xl sm:text-7xl md:text-8xl text-center font-serif  md:w-1/4'>
         Programms
-      </div> 
-      <div className="card bg-yellow-100 flex  flex-col md:flex-row w-auto md:rounded-3xl md:flex-1 md:ml-0  lg:ml-1 xl:ml-14 md:mr-4  lg:mr-52 xl:mr-96">
-        <div className='h-auto w-full md:w-1/3'>
+      </div>
+
+
+
+      <div className='w-full flex justify-center'>
+      <div className="card bg-yellow-100 flex  flex-col md:flex-row w-96  md:w-auto md:rounded-3xl md:flex-1 md:ml-0  lg:ml-1 xl:ml-14 md:mr-4  lg:mr-52 xl:mr-96">
+        <div className='h-auto w-full md:w-1/3 flex justify-center'>
           <img src={nanhi} className='h-full w-full rounded-3xl' alt="Program 1"></img>
         </div>
-        <div className='flex flex-col  md:text-center md:h-40  w-full'>
+        <div className='flex flex-col  md:text-center md:h-40  px-6 sm:px-3 md:px-0 w-full'>
         <div className='md:pb-6
-          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
-          <p className='text-xl text-center  w-full'>Nanhi Muskaan - 3rd Dec 2012</p> 
+          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden gap-1 sm:gap-0.5'>
+          <p className=' text-center text-xl w-full'>Nanhi Muskaan - 3rd Dec 2012</p> 
            <br></br>
+           <p className=' text-xs sm:text-sm md:text-base text-center'>
 The program organized for physically and mentally disabled children from 13 districts of Uttarakhand sounds both heartwarming and impactful. Providing them with a platform aimed to integrate these often-neglected children into the broader societal fabric.
 Beginning with a visit to an ashram in Haridwar, the children participate in the Holy Ganga Aarti, a deeply spiritual and culturally significant experience. This likely provided them not only with a sense of belonging but also a chance to engage with their spirituality in a meaningful way.
-
+</p>
           </div>
           <button className='btn-pin3 self-end'>Know More</button>
         </div>
-      </div>
-      <div className="card bg-yellow-100 flex flex-col md:flex-row md:rounded-3xl md:flex-1 md:ml-0  lg:ml-16 xl:ml-52 md:mr-4  
+      </div></div>
+
+
+      <div className='w-full flex justify-center'>
+      <div className="card bg-yellow-100 flex  flex-col md:flex-row w-96  md:w-auto md:rounded-3xl md:flex-1 md:ml-0  lg:ml-16 xl:ml-52 md:mr-4  
       lg:mr-24 xl:mr-52
       ">
-        <div className='h-auto w-full md:w-1/3'>
+        <div className='h-auto w-full md:w-1/3 flex justify-center'>
           <img src={saath} className='h-full w-full rounded-3xl' alt="Program 2"></img>
         </div>
-        <div className='flex flex-col  md:text-center  md:h-40  w-full'>
+        <div className='flex flex-col  md:text-center  md:h-40 px-6 sm:px-3 md:px-0 w-full'>
         <div className='md:pb-6
-          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
+          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden gap-1 sm:gap-0.5'>
             <p className='text-xl text-center  w-full'>MILE SATH TUMAHARA -  30th Sep 2012</p> 
            <br></br>
+           <p className=' text-xs sm:text-sm md:text-base text-center '>
            The event "Mile Sath Tumahara" was a heartwarming showcase of talent and inclusivity, bringing together individuals from various marginalized groups in society. Organized by your society, the event aimed to provide a platform for disabled, differently-abled, and neglected individuals to showcase their talents in music and dance.
 Over two months, these selected participants received rigorous training in various art forms such as dance, song, drama, and even a fashion show. This training not only honed their artistic skills but also served as a form of empowerment and rehabilitation.
-
+</p>
 
           </div>
           <button className='btn-pin3 self-end'>Know More</button>
         </div>
       </div>
-      <div className="card bg-yellow-100 flex flex-col md:flex-row  md:rounded-3xl md:flex-1  md:ml-0  lg:ml-52 xl:ml-96">
-        <div className='h-auto w-full md:w-1/3'>
+      </div>
+
+
+
+
+      <div className='w-full flex justify-center'>
+      <div className="card bg-yellow-100 flex  flex-col md:flex-row w-96  md:w-auto md:rounded-3xl md:flex-1  md:ml-0  lg:ml-52 xl:ml-96">
+        <div className='h-auto w-full md:w-1/3 flex justify-center'>
           <img src={yoga} className='h-full w-full rounded-3xl' alt="Program 3"></img>
         </div>
-        <div className='flex flex-col  md:text-center  md:h-40  w-full'>
+        <div className='flex flex-col  md:text-center  md:h-40  px-6 sm:px-3 md:px-0 w-full'>
           <div className='md:pb-6
-          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden'>
+          h-full w-full flex  flex-wrap sw:overflow-y-scroll overflow-x-hidden  gap-1 sm:gap-0.5'>
            <p className='text-xl text-center  w-full'>Yoga Training Camp - 19th Feb 2014</p> 
            <br></br>
+           <p className=' text-xs sm:text-sm md:text-base  text-center'>
           The week-long Yoga Training Programme organized by Samarpit Media Society at Max Super Speciality Hospital was a commendable endeavour aimed at nurturing holistic well-being among healthcare professionals. By seamlessly integrating theory with practical sessions, the initiative empowered doctors and nurses with invaluable tools to bolster their physical and mental resilience.
-
+</p>
           </div>
           <button className='btn-pin3 self-end'>Know More</button>
         </div>
+      </div>
       </div>
     </div>   
   
@@ -269,7 +286,7 @@ Over two months, these selected participants received rigorous training in vario
   <div className='flex flex-col justify-center w-full  pt-20 gap-10 bg-cover z-10'
         style={{backgroundImage:`url(${wave2})`,backgroundPosition:`center`}}>
        <div className='h-20 w-auto text-6xl sm:text-7xl md:text-8xl font-serif pl-28 pb-28'>Gallery</div>
-       <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-2 md:gap-4 mt-10 px-20 '>
+       <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-2 md:gap-4 mt-10 sm:px-4 md:px-4 lg:px-10 xl:px-16 '>
 
        <div className=' bg-white relative rounded-3xl h-auto w-20 flex-1 boxes'>
        <div className='blockglow h-full '>
@@ -296,7 +313,7 @@ Over two months, these selected participants received rigorous training in vario
 
 
 
-     <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-3 md:gap-5 mt-10 px-20 '>
+     <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-2 md:gap-4 sm:px-4 md:px-4 lg:px-10 xl:px-16'>
 
 <div className=' bg-white relative rounded-3xl h-auto w-20 flex-1 boxes'>
 <div className='blockglow h-full '>
@@ -320,7 +337,7 @@ Over two months, these selected participants received rigorous training in vario
 </div>
 
 </div>
-  <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between gap-3 md:gap-5 mt-10 px-20 '>
+  <div className='flex w-full h-40 md:h-40 lg:h-52 justify-between  gap-2 md:gap-4  sm:px-4 md:px-4 lg:px-10 xl:px-16'>
 
 <div className=' bg-white relative rounded-3xl h-auto w-20 flex-1 boxes'>
 <div className='blockglow h-full '>
