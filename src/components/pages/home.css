@@ -131,8 +131,7 @@ transform: scaleX(1);
     display:flex;
     flex-direction:column;
     color:rgb(247, 247, 247);
-    bottom:20%;
-    left: 10%;
+   
     z-index:5;
     gap:1em;
     transition:all 0.4s;

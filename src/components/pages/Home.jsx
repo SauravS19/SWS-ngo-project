@@ -1,37 +1,36 @@
 import React from 'react'
 import {  AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
 import './home.css'
-import Blue from './bluebubble.png'
-import pink from './pinkbubble.png'
-import green from './greenbubble.png'
-import red from './redbubble.png'
-import orange from './orangebubble.png'
-import blog from './blob3.jpeg'
-import blob from './blob.jpeg'
-import wave from './slide.png'
-import wave2 from './slide2.png'
 import Carousel from './Carousel.jsx'
-import image2 from '../pages/img2.jpeg'; 
-import social from './empower.png'
-import envi from './environment.png'
-import tour from './tour-guide.png'
-import yoga from './yoga.jpg'
-import foot2 from './foot2.jpeg'
-import saath from './milesaath.jpg'
-import nanhi from './nanhimuskan.jpg'
-import img0 from './img0.jpg'
-import img1 from './img1.jpg'
-import img2 from './img2.jpg'
-import img3 from './img3.jpg'
-import img4 from './img4.jpg'
-import img5 from './img5.jpg'
-import img6 from './img6.jpg'
-import img7 from './img7.jpg'
-import img8 from './img8.jpg'
-import img9 from './img9.jpg'
-import img10 from './img10.jpg'
-import img11 from './img11.jpg'
-import star from './star.png'
+import Blue from '../../assets/icons/bluebubble.png'
+import pink from '../../assets/icons/pinkbubble.png'
+import green from '../../assets/icons/greenbubble.png'
+import red from '../../assets/icons/redbubble.png'
+import orange from '../../assets/icons/orangebubble.png'
+import blog from '../../assets/icons/blob3.jpeg'
+import blob from '../../assets/icons/blob.jpeg'
+import wave from '../../assets/icons/slide.png'
+import wave2 from '../../assets/icons/slide2.png'
+import star from '../../assets/icons/star.png'
+import social from '../../assets/icons/empower.png'
+import envi from '../../assets/icons/environment.png'
+import tour from '../../assets/icons/tour-guide.png'
+import yoga from '../../assets/gallery/yoga.jpg'
+import saath from '../../assets/gallery/milesaath.jpg'
+import nanhi from '../../assets/gallery/nanhimuskan.jpg'
+import img0 from '../../assets/gallery/img0.jpg'
+import img1 from '../../assets/gallery/img1.jpg'
+import img2 from '../../assets/gallery/img2.jpg'
+import img3 from '../../assets/gallery/img3.jpg'
+import img4 from '../../assets/gallery/img4.jpg'
+import img5 from '../../assets/gallery/img5.jpg'
+import img6 from '../../assets/gallery/img6.jpg'
+import img7 from '../../assets/gallery/img7.jpg'
+import img8 from '../../assets/gallery/img8.jpg'
+import img9 from '../../assets/gallery/img9.jpg'
+import img10 from '../../assets/gallery/img10.jpg'
+import img11 from '../../assets/gallery/img11.jpg'
+
 
 const Home = () => {
   return (
@@ -40,7 +39,7 @@ const Home = () => {
       <div className='relative flex justify-center w-10/12 h-[40rem]'>
           <div className='crousel relative flex w-full  rounded-xl items-center bg-cover'>
             <Carousel />
-            <div className='homedata  w-5/12 sm:w-3/12 '>
+            <div className='homedata ml-20 w-5/12 sm:w-3/12 '>
               <div className='heading italic text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
                 Empowering<br />
                 Communities<br />
@@ -79,19 +78,19 @@ const Home = () => {
                 </div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h- w-full justify-evenly blur-[1.5px]'>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce-fast'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-20 rounded-full animate-bounce'>
+                  <div className=' w-20 rounded-full animate-bounce-slow'>
                   <img src={pink} className='rounded-full w-full '></img>
                    </div>
                    <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce-slow'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce-medium'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
               
@@ -129,19 +128,19 @@ const Home = () => {
                 <p>With unwavering dedication, SMS employs a symphony of creative mediums—from captivating audio-visual productions to soul-stirring musical compositions and vibrant community events—to illuminate minds and ignite change.</p></div>
                 </div>
                 <div className='relative bg-transparent bottom-0 flex h-32 w-full justify-evenly blur-[1.5px]'>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                <div className=' w-24 rounded-full animate-bounce-fast'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-20 rounded-full animate-bounce'>
+                  <div className=' w-20 rounded-full animate-bounce-slow'>
                   <img src={pink} className='rounded-full w-full '></img>
                    </div>
                    <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce-slow'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce-medium'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
                  
@@ -362,25 +361,25 @@ Over two months, these selected participants received rigorous training in vario
 
 </div>
      <div className=' relative bg-transparent flex h-24 w-full justify-evenly  blur-[1.5px] -z-10'>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce-slow'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-20 rounded-full animate-bounce'>
+                  <div className=' w-20 rounded-full animate-bounce-fast'>
                   <img src={pink} className='rounded-full w-full '></img>
                    </div>
                    <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce-medium'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce-slow'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce-medium'>
                  <img src={Blue} className='rounded-full w-full '></img>
                   </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce-fast'>
                    <img src={red} className='rounded-full w-full '></img>
                   </div>
                   <div className=' w-20 rounded-full animate-bounce'>
@@ -389,13 +388,13 @@ Over two months, these selected participants received rigorous training in vario
                    <div className=' w-24 rounded-full animate-bounce'>
                     <img src={green} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce-slow'>
                   <img src={red} className='rounded-full w-full '></img>
                    </div>
-                  <div className=' w-24 rounded-full animate-bounce'>
+                  <div className=' w-24 rounded-full animate-bounce-fast'>
                   <img src={orange} className='rounded-full w-full '></img>
                   </div>
-                   <div className=' w-20 rounded-full animate-bounce'>
+                   <div className=' w-20 rounded-full animate-bounce-medium'>
                  <img src={Blue} className='rounded-full w-full '></img>
                   </div>
 

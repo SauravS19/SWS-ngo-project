@@ -4,10 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
-import image1 from '../../assets/img1.png';
-import image2 from '../../assets/img3.png';
-import image3 from '../../assets/img4.png';
-import image4 from '../../assets/img5.png';
+import image1 from '../../assets/Carousel/img1.png';
+import image2 from '../../assets/Carousel/img3.png';
+import image3 from '../../assets/Carousel/img4.png';
+import image4 from '../../assets/Carousel/img5.png';
 
 
 const Crousel = () => {
