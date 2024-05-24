@@ -26,8 +26,7 @@ const Foot = () => {
           <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
           <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Nanhi Muskan</div>
           <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Nanhi Muskan</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
+          
           
           </div>
          
@@ -59,7 +58,7 @@ const Foot = () => {
       
        
       </div>
-      <div className='relative rounded-3xl  sm:w-full w-full  flex-1 flex bg-opacity-25 bg-white backdrop-filter backdrop-blur-lg justify-center h-fit '>
+      <div className='relative  sm:w-full w-full  flex-1 flex bg-opacity-100 bg-white backdrop-filter backdrop-blur-lg justify-center h-fit '>
         <div className=' h-fit flex flex-col w-9/12 items-center '>
           <div className='text-8xl '>S W S</div>
 

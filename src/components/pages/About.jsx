@@ -117,7 +117,7 @@ const About = () => {
           </div>
         </div>
 
-      
+        <Foot></Foot>
       </div>
 
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className='Modal' overlayClassName='Overlay'>
@@ -128,7 +128,7 @@ const About = () => {
       </Modal>
 
 
-<Foot></Foot>
+
       
     </div>
    
