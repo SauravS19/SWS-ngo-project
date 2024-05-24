@@ -6,6 +6,7 @@ import image2 from '../../assets/gallery/img0.jpg';
 
 import './About.css';
 import Foot from './footer';
+import bg from '../../assets/icons/About.png'
 
 
 Modal.setAppElement('#root'); // Ensures accessibility by attaching modal to the root element
@@ -25,16 +26,17 @@ const About = () => {
   };
 
   return (
-    <div className=' body1 flex mt-28 flex-col w-full items-center gap-10'>
-      <div className='header h-20 pb-20 w-auto bg-transparent text-6xl sm:text-7xl md:text-8xl font-serif'>
+    <div className=' body1 flex mt-20 flex-col w-full   items-center bg-cover bg=center gap-10'
+    style={{backgroundImage:`url(${bg})`}}>
+      <div className='header h-20 pb-20 mt-5 w-auto bg-transparent text-6xl sm:text-7xl md:text-8xl font-serif'>
         About Us
       </div>
 
-      <div className='text1 text-4xl italic text-violet-800'>from the Director</div>
+      <div className='text1 text-xl sm:text-xl md:text-2xl  lg:text-4xl w-auto italic text-violet-800'>from the Director</div>
 
       <div className="flex flex-col h-auto md:flex-row w-10/12 md:flex-1 mb-20 gap-5">
         <div className='flex flex-col h-auto w-full'>
-          <div className='h-auto w-auto text-center'>
+          <div className='h-auto w-auto text-center bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl'>
             "Protecting nature is not just a choice; it's our responsibility. Together, let's safeguard our planet for a sustainable future."
             Established in 2012, Samarpit Media Society (SMS) stands as a beacon of hope and progress in Uttarakhand, weaving a tapestry of transformative initiatives across environmental conservation, tourism promotion, and social empowerment.
             With unwavering dedication, SMS employs a symphony of creative mediums—from captivating audio-visual productions to soul-stirring musical compositions and vibrant community events—to illuminate minds and ignite change.
@@ -52,7 +54,7 @@ const About = () => {
       </div>
 
       <div className='h-auto w-full flex flex-col items-center second gap-20'>
-        <div className='bg-gray-500 w-full h-16'></div>
+       
 
         <div className='h-auto w-10/12 flex flex-col'>
           <div className='w-full flex h-72 gap-5'>
@@ -64,7 +66,7 @@ const About = () => {
                 onClick={() => openModal(image2)}
               />
             </div>
-            <div className='slide-left flex flex-col flex-wrap w-3/6 md:w-3/6 lg:w-4/6 text-center justify-center overflow-x-auto'>
+            <div className='slide-left flex flex-col flex-wrap w-3/6 md:w-3/6 lg:w-4/6 text-center justify-center overflow-x-auto  bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl'>
               kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
               bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
               slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
@@ -77,7 +79,7 @@ const About = () => {
 
         <div className='h-auto w-10/12 flex flex-col'>
           <div className='w-full flex h-72 gap-5'>
-            <div className='slide-right flex flex-col flex-wrap w-3/6 md:w-3/6 lg:w-4/6 text-center justify-center overflow-x-auto'>
+            <div className='slide-right flex flex-col flex-wrap w-3/6 md:w-3/6 lg:w-4/6 text-center justify-center overflow-x-auto  bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl'>
               kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
               bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
               slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd
@@ -106,7 +108,7 @@ const About = () => {
                 onClick={() => openModal(image2)}
               />
             </div>
-            <div className='slide-left flex flex-col flex-wrap w-3/6 md:w-3/6 lg:w-4/6 text-center justify-center overflow-x-auto'>
+            <div className='slide-left flex flex-col flex-wrap w-3/6 md:w-3/6 lg:w-4/6 text-center justify-center overflow-x-auto  bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl'>
               kjfkdbfdkjfbsdkfbdskfbkdjsbfjksdbfkdsjbfkd
               bfkbfjkbfdslkjffdsdlkshfhkldsahkdshklahsafkd
               slsdkdshdhdsfhhdhfhdshfdhhksdkljfhsdkfhdhfsd

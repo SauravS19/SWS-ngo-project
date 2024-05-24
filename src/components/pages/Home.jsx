@@ -154,7 +154,7 @@ const Home = () => {
       </div>
 <div className='text1 flex flex-col gap-5'>
      <div className='text1 flex justify-center w-full h-28 sm:h-32 md:h-40 lg:h-48 xl:h-56 bg-top bg-cover'
-      style={{backgroundImage:`url(${wave})`}} >
+      style={{backgroundImage:`url(${wave})`}}>
     <div className='slide-bottom relative w-full text-center text-xl self-end bg-transparent'>
          <p className='italic font-medium text-violet-900'>“It is not how much we give, but how much love is put in the giving.”<br></br>
 ~Mother Teresa
