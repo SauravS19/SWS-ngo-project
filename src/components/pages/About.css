@@ -9,21 +9,21 @@
     align-items: center;
     justify-content: center;
 }
-.text{
+.text1{
   
     position: relative;
 
 }
-.text::after{
+.text1::after{
     content: '|';
     position: absolute;
     right: -1px;
-    color:blue;
-
+    color:rgb(0, 0, 0);
+   background-color: white;
     width: 100%;
    
 }
-.body:hover .text::after{
+.body1:hover .text1::after{
     animation: typing 3s steps(17) forwards;
    
   

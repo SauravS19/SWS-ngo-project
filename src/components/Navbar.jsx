@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import {  AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import logo1 from '../assets/icons/logo.jpg'
+import logo1 from '../assets/icons/logo.png'
+import nav from '../assets/icons/nav.png'
 
 
 
@@ -18,9 +19,9 @@ const  Navbar = ()=> {
   };
 
   return (
-    <div className='flex fixed top-0 w-full justify-center bg-white shadow-md z-50'>
-    <img src={logo1} className=' h-[88px]'></img>
-      <div className=" flex flex-col items-center top-0 w-9/12 bg-white shadow-md ">
+    <div className='flex fixed top-0 w-full justify-center  z-50 bg-cover bg-opacity-50 bg-white backdrop-filter backdrop-blur-lg shadow-xl '>
+    <img src={logo1} className=' h-[88px] '></img>
+      <div className=" flex flex-col items-center top-0 w-9/12  bg-transparent">
  
     <div className='flex  flex-wrap justify-end w-full items-center gap-10  mt-2'>
      <div className='md:block hidden'><AiFillFacebook className='h-8 w-8 scale '></AiFillFacebook></div>
