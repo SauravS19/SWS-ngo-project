@@ -56,7 +56,7 @@
 .card::before {
 content: "";
 position: absolute;
-background-color:rgb(247, 158, 222);
+background-color:rgb(255, 204, 241);
 top: 0px;
 left: 0;
 right: 0;

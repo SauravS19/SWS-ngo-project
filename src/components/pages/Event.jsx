@@ -6,7 +6,7 @@ import bg from '../../assets/icons/bgs.png'
 
 const Event = () => {
   return (<>
-    <div className='flex flex-col h-auto w-auto  items-center pt-28 gap-10 bg-cover '
+    <div className='flex flex-col   items-center pt-28 gap-10 bg-cover w-full  h-fit   bg-contain  bg-repeat-y '
       style={{backgroundImage:`url(${bg})`}}>
     <div className='h-40 w-full text-9xl  text-center italic'>Events</div>
     <div className='w-11/12 h-48 sm:h-48  md:h-52 lg:h-60 xl:h-72  flex gap-2 sm:gap-7 md:gap-10 xl:gap-28 px-1 '>

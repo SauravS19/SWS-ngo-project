@@ -14,13 +14,13 @@
 
 import Foot from './footer';
 import './blog.css'
-
+import bg from '../../assets/icons/About.png'
 const Blogs = () => {
   
 
   return (
-    <div className="h-screen w-full  flex mt-20 justify-center ">
-     <div className='self-center  h-40 w-40 rounded-full alpha'></div>
+    <div className="h-auto w-full  flex mt-20 bg-cover "
+      style={{backgroundImage:`url(${bg})`,height:`900px`}}>
       
     </div>
   );
