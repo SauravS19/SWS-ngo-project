@@ -181,11 +181,24 @@
 
 
 
+/* //////////////////////////map///////////////////// */
 
 
 
 
 
+          #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            }
+            #menu {
+            position: absolute;
+            background: #efefef;
+            padding: 10px;
+            font-family: 'Open Sans', sans-serif;
+            }
 
 
 
@@ -196,6 +209,9 @@
 
 /* 
           //////////////////////////////////////////// */
+
+
+/* card1 nhi card  */
 
 
 

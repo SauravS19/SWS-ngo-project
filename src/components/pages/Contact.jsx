@@ -1,33 +1,65 @@
-import React from 'react'
-import Foot from './footer';
-import cw from '../../assets/icons/contact.png'
-import './Contact.css'
+import React, { useEffect } from 'react';
+import mapboxgl from 'mapbox-gl';
+import './Contact.css';
+
 const Contact = () => {
+  useEffect(() => {
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGVsdGEtc3R1ZHVlbnQiLCJhIjoiY2xvMDk0MTVhMTJ3ZDJrcGR5ZDFkaHl4ciJ9.Gj2VU1wvxc7rFVt5E4KLOQ';
+    //mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+
+    const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
+      center: [-2.81361, 36.77271], // starting position [lng, lat]
+      zoom: 13 // starting zoom
+    });
+
+    const layerList = document.getElementById('menu');
+    const inputs = layerList.getElementsByTagName('input');
+
+    for (const input of inputs) {
+      input.onclick = (layer) => {
+        const layerId = layer.target.id;
+        map.setStyle('mapbox://styles/mapbox/' + layerId);
+      };
+    }
+  }, []);
+
   return (
     <>
-    {/* <div className='main h-auto w-full mt-20  bg-blue-400 flex flex-col bg-center bg-cover gap-20'
-     style={{backgroundImage:`url(${cw})`}}>
-     <div className='map w-11/12 h-96 mt-20 bg-white-400 rounded-xl self-center'></div>
-     <div className='h-auto w-11/12 sm:w-9/12 md:w-3/5 lg:w-8/12 xl:w-7/12 bg-opacity-10 bg-white backdrop-filter backdrop-blur-sm shadow-inner shadow-white rounded-xl  flex flex-col mb-24 border-4 border-white
-     border-solid gap-10 pb-10 self-center'>
-    <div className='w-auto h-auto  text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl  pl-10  pt-2 '>Contact Us</div>
-    <div className='text-3xl italic  w-8/12  h-auto  flex
-    flex-col justify-center text-center self-center'>
-    <p className=' text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl italic mb-2 sm:mb-4 md:mb-7 lg:mb-10'>Samarpit Media Society</p>
-    <p className='text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl'>101 Ganesh Vihar padampur</p>
-    <p className='text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl'>Garhwali tanki </p>
-    <p className='text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl'>Kotdwara ,Uttarakhand</p>
-    <p className='text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl'>Ph no.93837397937</p>
-    <p className='text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl'>E-mail:fghjgsfghsfhgsfghf</p>
-    
-</div>     
-     </div>
-    
-     
-    </div> */}
 
-    <div className='main h-auto w-full my-16 xl:my-24 flex flex-col  bg-center bg-cover gap-20'>
-    <div className='w-11/12 h-96 bg-red-200 mt-2 self-center'></div>
+
+<div className='main h-auto w-full my-16 xl:my-24 flex flex-col  gap-20'>
+   
+    /////mappppppppppppppphaiye                      
+
+
+    <div className='w-11/12 h-96  mt-2 self-center'>
+      <div id="map" style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}></div>
+      <div id="menu" style={{ position: 'absolute', background: '#efefef', padding: '10px', fontFamily: 'Open Sans, sans-serif' }}>
+        <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite" defaultChecked="checked" />
+        <label htmlFor="satellite-streets-v12">satellite streets</label>
+        <input id="light-v11" type="radio" name="rtoggle" value="light" />
+        <label htmlFor="light-v11">light</label>
+        <input id="dark-v11" type="radio" name="rtoggle" value="dark" />
+        <label htmlFor="dark-v11">dark</label>
+        <input id="streets-v12" type="radio" name="rtoggle" value="streets" />
+        <label htmlFor="streets-v12">streets</label>
+        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" />
+        <label htmlFor="outdoors-v12">outdoors</label>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  ////////////////card////////////
+
     <div className="card self-center w-10/12  sm:w-9/12 md:w-3/5 lg:w-8/12 xl:w-7/12 h-96 lg:h-[550px]">
       <div className="background flex flex-col gap-10 sm:gap-7 md:gap-12 lg:gap-16">
        <div className=' text-white h-auto w-9/12 self-center text-5xl sm:text-6xl  lg:text-7xl xl:text-7xl 2xl:text-7xl'>Contact Us</div>
@@ -36,15 +68,10 @@ const Contact = () => {
        <p>E-mail jhjhvbjjbjb</p></div>
        <button className='btn-pin self-center hide'>follow Us</button>
       </div>
-   
-      
       <div className="logo ">
        SWS
       </div>
-     
-      
-     
-      
+
       <div className="box box1">
         <span className="icon">
           <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" className="svg">
