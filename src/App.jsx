@@ -13,7 +13,8 @@ function App() {
   return (<>
   <Navbar/>
       <Routes> 
-        <Route path='/' element={<Suspense fallback={"loading"}><Home/></Suspense>}/>
+      <Route path='/' element={<Suspense fallback={"loading"}><Home/></Suspense>}/>
+        <Route path='/home' element={<Suspense fallback={"loading"}><Home/></Suspense>}/>
         <Route path='/about' element={<Suspense fallback={"loading"}><About/></Suspense>}/>
         <Route path='/contact' element={<Suspense fallback={"loading"}><Contact/></Suspense>}/>
         <Route path='/gallery' element={<Suspense fallback={"loading"}><Gallery/></Suspense>}/>
