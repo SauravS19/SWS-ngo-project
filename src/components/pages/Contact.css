@@ -16,22 +16,23 @@
     
     .logo {
     position: absolute;
-    right: 50%;
-    bottom: 50%;
+   
     transform: translate(50%, 50%);
     transition: all 0.6s ease-in-out;
+    color: white;
+    font-size:50px;
+    display: none;
     }
     
-    .logo .logo-svg {
-    fill: white;
-    width: 30px;
-    height: 30px;
+   
+    p{
+       margin-bottom: 20px;
     }
-    
+
     .icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     }
     
     .icon .svg {
@@ -133,17 +134,87 @@
     transition-delay: 0.6s;
     }
     
-    .card:hover {
-    transform: scale(1.1);
+  
+
+
+    .btn-pin {
+        background-color: var(--bgOrange);
+        width: fit-content;
+        color:black;
+        background-color: rgb(42, 234, 248);
+        padding: 0.5rem 0.8rem;
+       border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-weight: 500;
+        
+        position: relative;
+        z-index: 1;  
     }
-    
-    .card:hover .box {
-    bottom: -1px;
-    left: -1px;
-    }
-    
-    .card:hover .logo {
-    transform: translate(0, 0);
-    bottom: 20px;
-    right: 20px;
-    }
+
+        .btn-pin::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(42, 234, 248);
+            top: 0px;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            z-index: -1;
+            border-radius: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 0.4s;
+          }
+          .btn-pin:hover::before {
+            transform: scaleX(1);
+          }
+          .btn-pin:hover {
+            color: white;
+            transform: translateY(-7px);
+          }
+          .btn:active{
+            transform: translateY(-1px);
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+          //////////////////////////////////////////// */
+
+
+
+          .card1:hover {
+            transform: scale(1.1);
+            }
+            
+            .card1:hover .box {
+            bottom: -1px;
+            left: -1px;
+            }
+            
+            .card1:hover .logo {
+                display: block;
+            transform: translate(0, 0);
+            bottom: 20px;
+            right: 20px;
+            }
+            .card1:hover .hide {
+              transform: translate(0, 0);
+                display: none;
+            }

@@ -62,27 +62,27 @@ const Foot = () => {
       
        
       </div>
-      <div className='relative  sm:w-full w-full  flex-1 flex bg-opacity-100 bg-white backdrop-filter backdrop-blur-lg justify-center h-fit '>
+      <div className='relative   w-full  flex-1 flex bg-opacity-100 bg-white backdrop-filter backdrop-blur-lg justify-center h-fit mb-5'>
         <div className=' h-fit flex flex-col w-9/12 items-center '>
           <div className='text-6xl sm:text-8xl '>S M S</div>
 
           <div className='flex justify-center gap-4 sw:gap-8 md:gap-16 xl:gap-20 mt-2'>
-          <div className="md:block hidden">
+          <div>
             <a href='https://www.facebook.com/profile.php?id=100090550977393' target='_blank' rel='noopener noreferrer'>
               <img src={fb} className='h-8 w-8' alt='facebook' />
             </a>
           </div>
-          <div className="md:block hidden">
+          <div>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <img src={linkden} className="h-8 w-8" alt="LinkedIn" />
             </a>
           </div>
-          <div className="md:block hidden">
+          <div>
             <a href="https://www.instagram.com/samarpitmedia?igsh=MW91Mm5ramMwYjZzdg==" target="_blank" rel="noopener noreferrer">
               <img src={instagram} className="h-8 w-8" alt="Instagram" />
             </a>
           </div>
-          <div className="md:block hidden">
+          <div>
             <a href="https://youtube.com/@sms-666?si=VftBMQwd8rpymMcn" target="_blank" rel="noopener noreferrer">
               <img src={youtube} className="h-8 w-8" alt="YouTube" />
             </a>
