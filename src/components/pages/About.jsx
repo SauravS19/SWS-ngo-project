@@ -73,7 +73,7 @@ const About = () => {
           <div className='h-auto w-auto text-left bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl '>
           
             Mission: Samarpit Media Society (SMS) strives to foster an enlightened and responsible society by addressing social, environmental, and cultural challenges through creative initiatives, raising awareness, inspiring action, and empowering communities.
-            Vision: SMS envisions a future where Uttarakhand thrives as a model of sustainable progress, achieved through inclusive development, community empowerment, and global inspiration, paving the way for a brighter tomorrow for all.
+           
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ const About = () => {
        <div className='flex flex-col h-auto w-full justify-center'>
          <div className='h-auto w-auto text-left bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl'>
          
-           Mission: Samarpit Media Society (SMS) strives to foster an enlightened and responsible society by addressing social, environmental, and cultural challenges through creative initiatives, raising awareness, inspiring action, and empowering communities.
+           
            Vision: SMS envisions a future where Uttarakhand thrives as a model of sustainable progress, achieved through inclusive development, community empowerment, and global inspiration, paving the way for a brighter tomorrow for all.
          </div>
        </div>
