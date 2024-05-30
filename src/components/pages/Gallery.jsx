@@ -56,6 +56,7 @@ const Gallery = () => {
     };
 
     return (
+        <>
         <div className="flex flex-col items-center p-4 bg-gray-100 mt-24"> {/* Add margin-top here */}
             <h1 className="text-3xl font-bold mb-8">Gallery</h1>
             <LightGallery
@@ -70,8 +71,10 @@ const Gallery = () => {
                     </a>
                 ))}
             </LightGallery>
-            <Foot />
+            
         </div>
+        <Foot></Foot>
+</>
     );
 };
 

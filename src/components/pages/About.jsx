@@ -49,13 +49,13 @@ const About = () => {
   };
 
   return (
-    <div className='body1 flex mt-20 flex-col w-full h-fit items-center bg-contain 2xl:bg-cover bg-repeat-y gap-10 overflow-x-hidden'
-      style={{ backgroundImage: `url(${bg})` }}>
+    <div className='body1 flex mt-20 flex-col w-full h-fit items-center bg-contain  bg-repeat-y gap-10 overflow-x-hidden'
+      style={{ backgroundImage: `url(${bg})`}}>
       <div className='header h-20 pb-20 mt-5 w-auto bg-transparent text-6xl sm:text-7xl md:text-8xl font-serif'>
         About Us
       </div>
 
-      <div ref={el => animatedDivRefs.current[6] = el} className='animated-div text1 text-xl sm:text-xl md:text-2xl lg:text-4xl w-auto italic text-violet-800'>
+      <div ref={el => animatedDivRefs.current[6] = el} className='text1 text-xl sm:text-xl md:text-2xl lg:text-4xl w-auto italic text-violet-800'>
         from the Director
       </div>
 
