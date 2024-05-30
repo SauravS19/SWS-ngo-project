@@ -29,12 +29,12 @@ const Contact = () => {
     <>
 
 
-<div className='main h-auto w-full my-16 xl:my-24 flex flex-col  gap-20'>
+<div className='main h-full w-full my-16 xl:my-24 flex flex-col  gap-20'>
    
-    /////mappppppppppppppphaiye                      
+  
 
 
-    <div className='w-11/12 h-96  mt-2 self-center'>
+     <div className='w-11/12 h-96  mt-2 self-center bg-yellow-500'>
       <div id="map" style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}></div>
       <div id="menu" style={{ position: 'absolute', background: '#efefef', padding: '10px', fontFamily: 'Open Sans, sans-serif' }}>
         <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite" defaultChecked="checked" />
@@ -48,7 +48,7 @@ const Contact = () => {
         <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" />
         <label htmlFor="outdoors-v12">outdoors</label>
       </div>
-    </div>
+    </div> 
 
 
 
@@ -58,12 +58,12 @@ const Contact = () => {
 
 
 
-  ////////////////card////////////
 
-    <div className="card self-center w-10/12  sm:w-9/12 md:w-3/5 lg:w-8/12 xl:w-7/12 h-96 lg:h-[550px]">
-      <div className="background flex flex-col gap-10 sm:gap-7 md:gap-12 lg:gap-16">
-       <div className=' text-white h-auto w-9/12 self-center text-5xl sm:text-6xl  lg:text-7xl xl:text-7xl 2xl:text-7xl'>Contact Us</div>
-       <div className='hide text-white w-auto self-center  text-lg sm:text-2xl md:text-2xl lg:text-3xl  '><p>Ad:Ganesh Vihar Padampue Kotdwara</p>
+
+    <div className="card self-center w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 h-[450px] sm:h-[550px]">
+      <div className="background flex flex-col space-y-11 sm:space-y-12 justify-center">
+       <div className=' text-white text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center sm:self-start text-6xl sm:text-6xl  lg:text-7xl '>Contact Us</div>
+       <div className='hide text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  text-2xl sm:text-3xl  '><p>Ad:Ganesh Vihar Padampur Kotdwara</p>
        <p>ph-n0 9798797</p>
        <p>E-mail jhjhvbjjbjb</p></div>
        <button className='btn-pin self-center hide'>follow Us</button>
@@ -78,7 +78,7 @@ const Contact = () => {
             <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
           </svg>
         </span>
-      </div>
+      </div>          
       <div className="box box2">
         <span className="icon">
           <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" className="svg">
@@ -96,7 +96,7 @@ const Contact = () => {
       <div className="box box4"></div>
     </div>
     </div>
-    <Foot></Foot>
+     
     </>
   )
 }
