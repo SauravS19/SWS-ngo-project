@@ -8,11 +8,33 @@ import './About.css';
 import Foot from './footer';
 import bg from '../../assets/icons/About.png'
 import Carousel from '../Carousel/Carousel';
-
+import { useEffect, useRef } from 'react';
 
 Modal.setAppElement('#root'); // Ensures accessibility by attaching modal to the root element
 
 const About = () => {
+
+  const animatedDivRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    animatedDivRefs.current.forEach(div => observer.observe(div));
+
+    return () => {
+      animatedDivRefs.current.forEach(div => observer.unobserve(div));
+    };
+  }, []);
+
+
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalImage, setModalImage] = useState('');
 
@@ -33,7 +55,7 @@ const About = () => {
         About Us
       </div>
 
-      <div className=' text-xl sm:text-xl md:text-2xl  lg:text-4xl w-auto italic text-violet-800'>from the Director</div>
+      <div ref={el => animatedDivRefs.current[6] = el}  className='animated-div text1 text-xl sm:text-xl md:text-2xl  lg:text-4xl w-auto italic text-violet-800'>from the Director</div>
 
       <div className="flex flex-col h-auto lg:flex-row w-11/12 md:flex-1 mb-20 gap-5">
         <div className='flex flex-col h-auto w-full justify-center items-center'>
@@ -60,7 +82,7 @@ const About = () => {
       <div className="flex flex-col-reverse h-auto lg:flex-row w-11/12 md:flex-1 mb-20 gap-5">
        
 
-        <div className='w-9/12 md:w-3/5 flex md:items-center justify-center self-center lg:w-3/6 '>
+        <div ref={el => animatedDivRefs.current[1] = el}  className='animated-div2 from-right w-9/12 md:w-3/5 flex md:items-center justify-center self-center lg:w-3/6 '>
           <div className='h-64   md:items-center'>
           <img
                 src={image2}
@@ -70,7 +92,7 @@ const About = () => {
               />
           </div>
         </div>
-        <div className='flex flex-col h-auto w-full  justify-center'>
+        <div ref={el => animatedDivRefs.current[0] = el} className='animated-div1 from-left flex flex-col h-auto w-full  justify-center'>
           <div className='h-auto w-auto text-left bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl '>
           
             Mission: Samarpit Media Society (SMS) strives to foster an enlightened and responsible society by addressing social, environmental, and cultural challenges through creative initiatives, raising awareness, inspiring action, and empowering communities.
@@ -79,10 +101,8 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col h-auto lg:flex-row w-11/12 md:flex-1 mb-20 gap-5">
-       
-
-       
-       <div className='flex flex-col h-auto w-full justify-center'>
+      
+       <div ref={el => animatedDivRefs.current[2] = el}  className='animated-div2 from-right flex flex-col h-auto w-full justify-center'>
          <div className='h-auto w-auto text-left bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl'>
          
            
@@ -90,7 +110,7 @@ const About = () => {
          </div>
        </div>
 
-       <div className='w-9/12 md:w-3/5 flex md:items-center justify-center self-center lg:w-3/6 '>
+       <div ref={el => animatedDivRefs.current[3] = el} className='animated-div1 from-left w-9/12 md:w-3/5 flex md:items-center justify-center self-center lg:w-3/6 '>
          <div className='h-64   md:items-center'>
          <img
                src={image2}
@@ -104,7 +124,7 @@ const About = () => {
      <div className="flex flex-col-reverse h-auto lg:flex-row w-11/12 md:flex-1 mb-20 gap-5">
        
 
-       <div className='w-9/12 md:w-3/5 flex md:items-center justify-center self-center lg:w-3/6 '>
+       <div ref={el => animatedDivRefs.current[4] = el}  className='animated-div2 from-right w-9/12 md:w-3/5 flex md:items-center justify-center self-center lg:w-3/6 '>
          <div className='h-64   md:items-center'>
          <img
                src={image2}
@@ -114,7 +134,7 @@ const About = () => {
              />
          </div>
        </div>
-       <div className='flex flex-col h-auto w-full justify-center'>
+       <div ref={el => animatedDivRefs.current[5] = el} className='animated-div1 from-left flex flex-col h-auto w-full justify-center'>
          <div className='h-auto w-auto text-left bg-opacity-5 bg-white backdrop-filter backdrop-blur-sm rounded-xl'>
          
            Mission: Samarpit Media Society (SMS) strives to foster an enlightened and responsible society by addressing social, environmental, and cultural challenges through creative initiatives, raising awareness, inspiring action, and empowering communities.
