@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import './Contact.css';
+import Foot from './footer';
 
 const Contact = () => {
   // useEffect(() => {
@@ -29,10 +30,10 @@ const Contact = () => {
     <>
 
 
-<div className='main h-full w-full my-16 xl:my-24 flex flex-col  gap-20'>
+<div className='main h-full w-full my-16 xl:my-24 flex flex-col pt-20 gap-20'>
    
-  
-<div className='w-11/12 h-96  mt-2 self-center bg-yellow-500'> </div>
+{/*   
+<div className='w-11/12 h-96  mt-2 self-center bg-yellow-500'> </div> */}
 {/* 
      <div className='w-11/12 h-96  mt-2 self-center bg-yellow-500'>
       <div id="map" style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}></div>
@@ -60,10 +61,10 @@ const Contact = () => {
 
 
 
-    <div className="card self-center w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 h-[450px] sm:h-[550px]">
+    <div className="card self-center w-10/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 h-[450px] sm:h-[550px]">
       <div className="background flex flex-col space-y-2 sm:space-y-2 justify-center">
-       <div className=' text-white text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center sm:self-start text-6xl sm:text-6xl  lg:text-7xl mb-5'>Contact Us</div>
-       <div className='hide text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  text-xl sm:text-3xl  '><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
+       <div className=' text-white hide text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center sm:self-start text-6xl sm:text-6xl  lg:text-7xl mb-5'>Contact Us</div>
+       <div className='hide text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  text-xl sm:text-3xl '><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
 Dehradun,Uttarakhand - 248001
 </p>
        <p>MobileNo:8954757925, 8191995014</p>
@@ -97,6 +98,7 @@ Dehradun,Uttarakhand - 248001
       </div>
       <div className="box box4"></div>
     </div>
+    <Foot></Foot>
     </div>
      
     </>
