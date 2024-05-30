@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './home.css'
-import Carousel from './Carousel.jsx'
+
 import Blue from '../../assets/icons/bluebubble.png'
 import pink from '../../assets/icons/pinkbubble.png'
 import green from '../../assets/icons/greenbubble.png'
@@ -33,6 +33,7 @@ import img11 from '../../assets/gallery/img11.jpg'
 import Foot from './footer'
 
 import { Link } from 'react-router-dom';
+import Carousel from '../Carousel/Carousel'
 
 
 
@@ -43,7 +44,7 @@ const Home = () => {
       <div className='Container  flex flex-col w-screen items-center mt-28 overflow-x-hidden'>
       <div className='relative flex justify-center w-10/12 h-96 md:h-[40rem]'>
           <div className='crousel relative flex w-full  rounded-xl items-center bg-cover'>
-            <Carousel />
+           <Carousel></Carousel>
             <div className='homedata ml-20 w-5/12 sm:w-3/12 '>
               <div className='heading italic text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
                 Empowering<br />

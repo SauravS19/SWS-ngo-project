@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { AiFillCloseCircle, AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
-import Carousel from './Carousel';
+
 import image2 from '../../assets/gallery/img0.jpg';
 
 import './About.css';
 import Foot from './footer';
 import bg from '../../assets/icons/About.png'
+import Carousel from '../Carousel/Carousel';
 
 
 Modal.setAppElement('#root'); // Ensures accessibility by attaching modal to the root element
@@ -48,7 +49,7 @@ const About = () => {
 
         <div className='w-9/12 md:w-3/5 flex md:items-center justify-center self-center lg:w-3/6 '>
           <div className='h-80 w-full  md:items-center'>
-            <Carousel />
+            <Carousel></Carousel>
           </div>
         </div>
       </div>

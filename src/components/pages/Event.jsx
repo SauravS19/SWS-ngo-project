@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Carousel from './Carousel'; // Assuming you have a Carousel component defined
+import Carousel from '../Carousel/Carousel'; // Assuming you have a Carousel component defined
 import Foot from './footer';
 import bg from '../../assets/icons/bgs.png';
 import './Event.css';
-import Carouselyg from './Carouselyg';
-import Carouselnm from './Craouselnm';
-import Carouselmg from './Carouselms';
-import Carouselms from './Carouselms';
+import Carouselyg from '../Carousel/Carouselyg';
+import Carouselnm from '../Carousel/Craouselnm';
+
+import Carouselms from '../Carousel/Carouselms';
 
 const Event = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,7 +30,7 @@ const Event = () => {
     <div className='w-11/12 h-44 sm:h-48  md:h-52 lg:h-60 xl:h-72  flex gap-2 sm:gap-7 md:gap-10 xl:gap-28 px-1 '>
     <div className='flex-1  bg-opacity-25  bg-pink-600  backdrop-filter backdrop-blur-lg h-full rounded-2xl flex justify-center px-2 sm:px-6 md:px-8 xl:px-10'>
       <div className='w-2/4 h-3/4 sm:h-4/5 self-center'>
-       <Carouselms></Carouselms>
+      <Carouselms></Carouselms>
       </div>
       <div className='w-2/4 bg-transparent h-4/5 self-center text-center text-[10px] sm:text-sm md:text-sm lg:text-base xl:text-xl flex flex-col  justify-center gap-2 '>
       <p className="text-sm sm:text-base md:text-2xl lg:text-3xl">Mile Sath Tumhara
@@ -50,7 +50,7 @@ The event served as a powerful reminder of the importance of inclusivity, empath
     </div>
     <div className='flex-1  bg-opacity-25  bg-sky-600  backdrop-filter backdrop-blur-lg h-full rounded-2xl flex justify-center px-2 sm:px-6 md:px-8 xl:px-10'>
       <div className='w-2/4 h-3/4 sm:h-4/5 self-center'>
-        <Carouselnm></Carouselnm>
+       <Carouselnm></Carouselnm>
       </div>
       <div className='w-2/4 bg-transparent h-4/5 self-center text-center text-[10px] sm:text-sm md:text-sm lg:text-base xl:text-xl flex flex-col  justify-center gap-2 '>
       <p className="text-sm sm:text-base md:text-2xl lg:text-3xl">Nanhi Muskaan 
@@ -196,7 +196,7 @@ Overall, the collaboration between Samarpit Media Society and the Tourism Depart
           <div className='modal-content'>
             <button className='close-modal-btn' onClick={closeModal}>✕</button>
             <div className='modal-image h-52 sm:h-56 md:h-64 lg:h-72 xl:h-96'>
-              <Carousel></Carousel> {/* Here's where the Carousel component is added */}
+              <Carousel></Carousel>
             </div>
             <div className='modal-text'>
               
