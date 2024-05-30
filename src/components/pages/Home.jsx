@@ -55,16 +55,16 @@ const Home = () => {
       });
     });
 
-    animatedDivRefs.current
-    .filter(div => div) // filter out any null or undefined values
-    .forEach(div => observer.observe(div));
-
-  return () => {
-    animatedDivRefs.current
+   animatedDivRefs.current
       .filter(div => div) // filter out any null or undefined values
-      .forEach(div => observer.unobserve(div));
-  };
-}, [animatedDivRefs]);
+      .forEach(div => observer.observe(div));
+
+    return () => {
+      animatedDivRefs.current
+        .filter(div => div) // filter out any null or undefined values
+        .forEach(div => observer.unobserve(div));
+    };
+  }, [animatedDivRefs]);
 
   return (
 
