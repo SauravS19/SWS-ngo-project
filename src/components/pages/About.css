@@ -1,56 +1,57 @@
-
 *{
     margin: 0;
-    padding: 0;box-sizing: border-box;
-}
-.body{
-
- 
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.text1{
-  
+    }
+    
+    .text1 {
     position: relative;
-
-}
-.text1::after{
+    }
+    
+    .text1::after {
     content: '|';
     position: absolute;
     right: -1px;
-    color:rgb(0, 0, 0);
-   background-color: rgb(221, 255, 249);
+    color: rgb(0, 0, 0);
+    background-color: rgb(221, 255, 249);
     width: 100%;
     animation: typing 3s steps(17) forwards;
-}
-   
-  
-
-@keyframes typing {
-    to{
+    }
+    
+    @Keyframes typing {
+    to {
     width: 0%;
     }
-}
-.animated-div1 {
+    }
+    
+    .animated-div1,
+    .animated-div2 {
     transform: scale(0);
     transition: transform 2s;
+    }
+    
+    .animated-div1 {
     transform-origin: right;
-  }
-  
-  .animated-div1.appear {
-    transform: scaleY(1);
-  } 
-  .animated-div2 {
-    transform: scale(0);
-    transition: transform 2s;
-    transform-origin: left;
-  }
-  
-  .animated-div2.appear {
+    }
+    
+    .animated-div1.appear {
     transform: scale(1);
-  } 
-.Modal {
+    }
+    
+    .animated-div2 {
+    transform-origin: left;
+    }
+    
+    .animated-div2.appear {
+    transform: scale(1);
+    }
+    
+    .Modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -67,9 +68,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .Overlay {
+    }
+    
+    .Overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -77,31 +78,29 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.75);
     z-index: 1000;
-  }
-  
-  .close-button {
+    }
+    
+    .close-button {
     position: absolute;
     top: 10px;
     right: 10px;
     background: none;
     border: none;
     cursor: pointer;
-  }
-
-
-::-webkit-scrollbar {
-    width:5px;
+    }
+    
+    ::-webkit-scrollbar {
+    width: 5px;
     height: 5px;
-     /* Adjust the width as needed */
-  }
-
-  /* Handle styles */
-  ::-webkit-scrollbar-thumb {
-    background-color: rgb(85, 201, 251); /* Adjust handle color if needed */
-    border-radius: 9999px; /* Rounded handle */
-  }
-
-  /* Handle hover styles */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color:rgb(27, 185, 253); /* Adjust handle hover color if needed */
-  }
+    }
+    
+    /* Handle styles /
+    ::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 201, 251); / Adjust handle color if needed /
+    border-radius: 9999px; / Rounded handle */
+    
+    
+    /* Handle hover styles /
+    ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(27, 185, 253); / Adjust handle hover color if needed */
+    

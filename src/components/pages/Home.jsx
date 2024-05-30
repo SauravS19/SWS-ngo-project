@@ -55,12 +55,17 @@ const Home = () => {
       });
     });
 
-    animatedDivRefs.current.forEach(div => observer.observe(div));
+  
+    animatedDivRefs.current
+      .filter(div => div) // filter out any null or undefined values
+      .forEach(div => observer.observe(div));
 
     return () => {
-      animatedDivRefs.current.forEach(div => observer.unobserve(div));
+      animatedDivRefs.current
+        .filter(div => div) // filter out any null or undefined values
+        .forEach(div => observer.unobserve(div));
     };
-  }, []);
+  }, [animatedDivRefs]);
 
   return (
 
@@ -310,27 +315,6 @@ Over two months, these selected participants received rigorous training in vario
 
     </div>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div className='flex flex-col justify-center w-full  pt-20 pb-40 px-2 gap-5 bg-cover z-10'
         style={{backgroundImage:`url(${wave2})`,backgroundPosition:`center`}}>
        <div className='h-20 w-auto text-6xl sm:text-7xl md:text-8xl font-serif self-center sm:self-start pl-24 '>Gallery</div>
@@ -412,13 +396,9 @@ Over two months, these selected participants received rigorous training in vario
 
 </div>  
 
-
   <Foot></Foot>
 </div>
-
-    
-   
+ 
   )
 }
-
 export default Home
