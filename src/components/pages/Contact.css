@@ -193,22 +193,30 @@
 
 
 
-          .card:hover {
+          .card {
             transform: scale(1.1);
             }
             
-            .card:hover .box {
+            .box {
             bottom: -1px;
             left: -1px;
+            display: none;
             }
             
-            .card:hover .logo {
+            .card .logo {
                 display: block;
             transform: translate(0, 0);
             bottom: 20px;
             right: 20px;
             }
-            .card:hover .hide {
+            .card.hide {
               transform: translate(0, 0);
                 display: none;
             }
+             .box .appear{
+              display: block;
+              }
+
+              .contents .target.appear{
+                display: none;
+              }

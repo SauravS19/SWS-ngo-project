@@ -4,27 +4,7 @@ import './Contact.css';
 import Foot from './footer';
 
 const Contact = () => {
-  // useEffect(() => {
-  //   mapboxgl.accessToken = 'pk.eyJ1IjoiZGVsdGEtc3R1ZHVlbnQiLCJhIjoiY2xvMDk0MTVhMTJ3ZDJrcGR5ZDFkaHl4ciJ9.Gj2VU1wvxc7rFVt5E4KLOQ';
-  //   //mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
-  //   const map = new mapboxgl.Map({
-  //     container: 'map', // container ID
-  //     style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
-  //     center: [-2.81361, 36.77271], // starting position [lng, lat]
-  //     zoom: 13 // starting zoom
-  //   });
-
-  //   const layerList = document.getElementById('menu');
-  //   const inputs = layerList.getElementsByTagName('input');
-
-  //   for (const input of inputs) {
-  //     input.onclick = (layer) => {
-  //       const layerId = layer.target.id;
-  //       map.setStyle('mapbox://styles/mapbox/' + layerId);
-  //     };
-  //   }
-  // }, []);
 
   return (
     <>
@@ -32,39 +12,12 @@ const Contact = () => {
 
 <div className='main h-full w-full my-16 xl:my-24 flex flex-col pt-20 gap-20'>
    
-{/*   
-<div className='w-11/12 h-96  mt-2 self-center bg-yellow-500'> </div> */}
-{/* 
-     <div className='w-11/12 h-96  mt-2 self-center bg-yellow-500'>
-      <div id="map" style={{ position: 'absolute', top: 0, bottom: 0, width: '100%' }}></div>
-      <div id="menu" style={{ position: 'absolute', background: '#efefef', padding: '10px', fontFamily: 'Open Sans, sans-serif' }}>
-        <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite" defaultChecked="checked" />
-        <label htmlFor="satellite-streets-v12">satellite streets</label>
-        <input id="light-v11" type="radio" name="rtoggle" value="light" />
-        <label htmlFor="light-v11">light</label>
-        <input id="dark-v11" type="radio" name="rtoggle" value="dark" />
-        <label htmlFor="dark-v11">dark</label>
-        <input id="streets-v12" type="radio" name="rtoggle" value="streets" />
-        <label htmlFor="streets-v12">streets</label>
-        <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors" />
-        <label htmlFor="outdoors-v12">outdoors</label>
-      </div>
-    </div>  */}
-
-
-
-
-
-
-
-
-
 
 
     <div className="card self-center w-10/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 h-[450px] sm:h-[550px]">
-      <div className="background flex flex-col space-y-2 sm:space-y-2 justify-center">
-       <div className=' text-white hide text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center sm:self-start text-6xl sm:text-6xl  lg:text-7xl mb-5'>Contact Us</div>
-       <div className='hide text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  text-xl sm:text-3xl '><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
+      <div className="background flex flex-col space-y-1 sm:space-y-2 justify-center">
+       <div className=' text-white hide text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center sm:self-start text-5xl sm:text-6xl  lg:text-7xl mb-5'>Contact Us</div>
+       <div className='hide text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  text-lg sm:text-xl:text-2xl'><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
 Dehradun,Uttarakhand - 248001
 </p>
        <p>MobileNo:8954757925, 8191995014</p>

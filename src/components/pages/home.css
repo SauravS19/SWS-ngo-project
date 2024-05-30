@@ -49,34 +49,33 @@
 
 
           .card {
+  
             cursor: pointer;
             transition: all 0.2s;
             position: relative;
             z-index: 1;   
-          }
-          .card::before {
-            content: "";
-            position: absolute;
-            background-color: rgb(255, 204, 241);
-            top: 0px;
-            left: 0;
-            right: 0;
-            bottom: 0px;
-            z-index: -1;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: all 0.8s;
-          }
-          .card:hover::before {
+                }
+            
+        .card::before {
+        content: "";
+        position: absolute;
+        background-color:rgb(255, 204, 241);
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        z-index: -1;
+        
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.8s;
+         }
+        .card:hover::before {
+        transform: scaleX(1);
+         }
+         .card:hover .btn-pin3 {
             transform: scaleX(1);
-          }
-          .card:hover .btn-pin3 {
-            transform: scaleX(1);
-          }
-          .visible .card::before {
-            transform: scaleX(1);
-          }
-
+         }
 
 
 /* <------------------------------------> */
@@ -143,33 +142,69 @@
    
 }
 
-.slide-left {
-    transform: scaleX(0);
-    transition: transform 0.8s;
-    transform-origin: right;
-  }
+
+
+/* .animated-div {
+  opacity: 0;
+  transition: opacity 5s, transform 5s;
+}
+
+.from-left {
+  transform: translateX(-50px);
+}
+
+.from-right {
+  transform: translateX(50px);
+}
+
+.from-bottom {
+  transform: translateY(50px);
+}
+
+.animated-div.appear.from-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated-div.appear.from-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated-div.appear.from-bottom {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+.animated-div2 {
+  transform: scale(0);
+  transition: transform 2s;
+  transform-origin: left;
+}
+
+.animated-div2.appear {
+  transform: scale(1);
+} 
+.animated-div1 {
+  transform: scale(0);
+  transition: transform 2s;
+  transform-origin: right;
+}
+
+.animated-div1.appear {
+  transform: scaleY(1);
+} 
+
+ .animated-div {
+  transform: scaleY(0);
+  transition: transform 2s;
+  transform-origin: top;
+}
+
+.animated-div.appear {
+  transform: scale(1);
+} 
   
-  .slide-right {
-    transform: scaleX(0);
-    transition: transform 0.8s;
-    transform-origin: left;
-  }
-  
-  .slide-bottom {
-    transform: scaleY(0);
-    transition: transform 0.8s;
-    transform-origin: top;
-  }
-  
-  .second:hover .slide-left,
-  .second:hover .slide-right {
-    transform: scaleX(1);
-  }
-  
-  .text1:hover .slide-bottom {
-    transform: scaleY(1);
-  } 
- 
 .blockglow::before , .blockglow::after{
     content: "";
     position:absolute;
