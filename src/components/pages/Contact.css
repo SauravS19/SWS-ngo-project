@@ -161,7 +161,7 @@
         cursor: pointer;
         transition: all 0.2s;
         font-weight: 500;
-        font-size:x-large;
+       
         position: relative;
         z-index: 1;  
     }
