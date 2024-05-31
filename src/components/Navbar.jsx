@@ -8,7 +8,7 @@ import instagram from '../assets/links/instagram.png';
 import linkden from '../assets/links/linkden.png';
 import youtube from '../assets/links/youtube.png';
 import menu from '../assets/icons/menu.png';
-
+import './pages/Navbar.css'
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex fixed top-0 w-screen justify-center z-50 bg-cover bg-opacity-50 bg-white backdrop-filter backdrop-blur-lg shadow-xl'>
+    <div className='flex fixed top-0 w-screen justify-center z-50 bg-cover bg-opacity-50 bg-white backdrop-filter  backdrop-blur-lg shadow-xl'>
       <img src={logo1} className='h-[88px]' alt="logo" />
       <div className="flex flex-col items-center top-0 w-9/12 bg-transparent">
         <div className='flex flex-wrap justify-end w-full items-center gap-10 mt-2'>
@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul className="hidden md:flex w-full h-12 justify-end items-center">
+        <ul className="hidden md:flex w-full h-12 ml-10 justify-end items-center">
           <li className="mr-auto"></li>
           <li><Link to={'/home'} className="nav-link px-4 py-2" onClick={hideSidebar}>Home</Link></li>
           <li><Link to={'/about'} className="nav-link px-4 py-2" onClick={hideSidebar}>About</Link></li>

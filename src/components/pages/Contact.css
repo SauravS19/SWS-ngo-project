@@ -1,5 +1,12 @@
 
-
+.main{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 .card {
   position: relative;  
   background: lightgrey;
@@ -180,22 +187,49 @@ transition-delay: 0.6s;
 
 
 
-      .card:hover {
+      .card {
         transform: scale(1.1);
         }
         
-        .card:hover .box {
+        .card .box {
         bottom: -1px;
         left: -1px;
         }
         
-        .card:hover .logo {
+        .card .logo {
             display: block;
         transform: translate(0, 0);
         bottom: 20px;
         right: 20px;
         }
-        .card:hover .hide {
+        .card .hide {
           transform: translate(0, 0);
             display: none;
         }
+
+        .heading{
+          font-family: "Playfair Display", serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+         
+      }
+
+        /* .card:hover {
+          transform: scale(1.1);
+          }
+          
+          .card:hover .box {
+          bottom: -1px;
+          left: -1px;
+          }
+          
+          .card:hover .logo {
+              display: block;
+          transform: translate(0, 0);
+          bottom: 20px;
+          right: 20px;
+          }
+          .card:hover .hide {
+            transform: translate(0, 0);
+              display: none;
+          } */

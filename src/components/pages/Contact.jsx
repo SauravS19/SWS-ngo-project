@@ -15,13 +15,15 @@ const Contact = () => {
 
     <div className="card self-center w-10/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 h-[450px] sm:h-[550px]">
       <div className="background flex flex-col space-y-1 sm:space-y-2 justify-center">
-       <div className=' text-white hide text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center sm:self-start text-5xl sm:text-6xl  lg:text-7xl mb-5'>Contact Us</div>
-       <div className='hide text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  text-lg sm:text-xl:text-2xl'><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
-Dehradun,Uttarakhand - 248001
+       <div className=' text-white heading text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 
+       xl:w-7/12 self-center sm:self-start text-5xl sm:text-6xl  lg:text-7xl mb-5'>Contact Us</div>
+       <div className=' text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  
+       text-lg sm:text-xl:text-2xl'><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
+         Dehradun,Uttarakhand - 248001
 </p>
        <p>MobileNo:8954757925, 8191995014</p>
        <p className='break-words'>EmailID:samarpitmediasociety@gmail.com</p></div>
-       <button className='btn-pin self-center hide text-sm md:text-lg'>follow Us</button>
+       <button className='btn-pin self-center text-sm md:text-lg'>follow Us</button>
       </div>
       <div className="logo ">
        SWS

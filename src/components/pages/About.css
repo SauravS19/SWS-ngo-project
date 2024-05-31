@@ -3,6 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     }
+    .body1{
+        font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    }
+    .header{
+        font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+ 
+    }
     .body {
     display: flex;
     align-items: center;
@@ -15,15 +29,16 @@
     
     .text1::after {
     content: '|';
+    font-style: normal;
     position: absolute;
     right: -1px;
     color: rgb(0, 0, 0);
     background-color: rgb(220, 250, 251);
     width: 100%;
-    animation: typing 5s steps(17) forwards;
+    animation: typing 4s steps(17) forwards;
     }
     
-    @Keyframes typing {
+    @keyframes typing {
     to {
     width: 0%;
     }
@@ -31,6 +46,12 @@
     
     .animated-div1,
     .animated-div2 {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
     transform: scale(0);
     transition: transform 2s;
     }

@@ -72,16 +72,16 @@ const Home = () => {
       <div className='relative flex justify-center w-10/12 h-96 md:h-[40rem]'>
           <div className='crousel relative flex w-full  rounded-xl items-center bg-cover'>
            <Carousel></Carousel>
-            <div className='homedata ml-20 w-5/12 sm:w-3/12 '>
-              <div className='heading italic text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
+            <div className='homedata ml-16 sm:ml-20 md:ml-24  xl:ml-32 w-5/12 sm:w-3/12 '>
+              <div className='heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl tracking-wide font-serif w-full text-white'>
                 Empowering<br />
                 Communities<br />
                 Together
               </div>
-              <div className='w-full italic text- text-white'>
+              <div className='w-full italic text-sm sm:text-base lg:text-xl xl:text-2xl  text-white'>
                 We are dedicated to making a difference in the lives of people through our various initiatives.
               </div>
-              <Link to={'/about'} className='btn-pin'>Learn More</Link>
+              <Link to={'/about'} className='btn-pin font-medium'>Know More</Link>
             </div>
           </div>
         </div>
@@ -96,12 +96,12 @@ const Home = () => {
     
       
           <div className=' h-auto flex flex-col justify-between w-full rounded-xl  bg-transparent '>
-               <div className='h-20 w-auto bg-transparent text-6xl lg:pl-32 sm:text-7xl sm:pl-16 md:pl-24 md:text-8xl font-serif '>
+               <div className='h-20 w-auto bg-transparent subheading text-6xl lg:pl-32 sm:text-7xl sm:pl-16 md:pl-24 md:text-8xl '>
                About Us
               </div>
               <div className='h-full mt-10 flex bg-transparent'>
               
-               <div className='w-6/12 flex flex-col justify-between relative  bg-transparent'>
+               <div className='w-6/12 flex flex-col justify-between relative self-center bg-transparent'>
                 
                 <div className='bg-transparent flex justify-center h-full relative w-full text-left  z-10'>{/*pt-12  pl-28*/}
                 <div className='w-11/12 sm:w-4/5 h-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
@@ -110,7 +110,7 @@ const Home = () => {
                 Samarpit Media Society (SMS) stands as a beacon of hope and progress in Uttarakhand, weaving a tapestry of transformative initiatives across environmental conservation, tourism promotion, and social empowerment.</p>
                 </div>
                 </div>
-                <div className='relative  bg-transparent bottom-0 flex h-full w-full justify-evenly blur-[1.5px]'>
+                <div className='relative  bg-transparent bottom-0 flex h-full w-full justify-evenly blur-[1.5px] gap-3 sm:gap-5'>
                   <div className=' w-24 rounded-full animate-bounce-fast'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
@@ -134,7 +134,7 @@ const Home = () => {
                    <div className='bg-transparent relative h-4/6 sm:h-3/4 xl:h-full w-4/5 '>
                     <img src={img4} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div ref={el => animatedDivRefs.current[0] = el} className='animated-div1 from-left w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center italic pt-5'>~ Transforming lives daily</div>
+                   <div ref={el => animatedDivRefs.current[0] = el} className='animated-div1 from-left w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center pt-5'>~ Transforming lives daily</div>
                
                 </div>
               </div>
@@ -145,17 +145,17 @@ const Home = () => {
                    <div className='bg-transparent relative h-4/6 sm:h-3/4  xl:h-full w-4/5 '>
                     <img src={img10} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div ref={el => animatedDivRefs.current[1] = el}  className='animated-div2 from-right w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800 italic text-center pt-5'>~ Together for change</div>
+                   <div ref={el => animatedDivRefs.current[1] = el}  className='animated-div2 from-right w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center pt-5'>~ Together for change</div>
                 </div>
                
-                <div className='w-6/12 flex flex-col justify-between relative  bg-transparent'>
+                <div className='w-6/12 flex flex-col justify-between relative self-center bg-transparent'>
                 
                 <div className='bg-transparent flex justify-center h-full relative w-full text-left  z-10'>{/*pt-12  pl-28*/}
                 <div className='w-11/12 sm:w-4/5 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
                 <p className='italic text-sky-700'>“The meaning of life is to find your gift. The purpose of life is to give it away.”</p><br></br>
                 <p>With unwavering dedication, SMS employs a symphony of creative mediums—from captivating audio-visual productions to soul-stirring musical compositions and vibrant community events—to illuminate minds and ignite change.</p></div>
                 </div>
-                <div className='relative bg-transparent bottom-0 flex h-full w-full justify-evenly blur-[1.5px]'>
+                <div className='relative bg-transparent bottom-0 flex h-full gap-3 sm:gap-5 w-full justify-evenly blur-[1.5px]'>
                 <div className=' w-24  rounded-full animate-bounce-fast'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
@@ -183,14 +183,14 @@ const Home = () => {
      <div className=' flex justify-center w-full h-28 sm:h-32 md:h-40 lg:h-48 xl:h-56 bg-top bg-cover'
       style={{backgroundImage:`url(${wave})`}}>
     <div className='slide-bottom relative w-full text-center text-xl self-end bg-transparent'>
-         <p ref={el => animatedDivRefs.current[2] = el}  className="animated-div from-bottom italic text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-violet-900">“It is not how much we give, but how much love is put in the giving.”<br></br>
+         <p ref={el => animatedDivRefs.current[2] = el}  className="animated-div from-bottom  text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-violet-900">“It is not how much we give, but how much love is put in the giving.”<br></br>
 ~Mother Teresa
 </p>  
 
     </div>
      </div>
      <div className='flex flex-col w-11/12 h-auto self-center  pb-14 '>
-      <div className='self-end h-20 bg-transparentw-auto  text-6xl sm:text-7xl md:text-8xl font-serif'>
+      <div className='self-end h-20 bg-transparentw-auto  text-6xl sm:text-7xl md:text-8xl subheading '>
         What we do
       </div>
       <div className='w-full  h-auto  mt-10 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  text-right'>
@@ -236,7 +236,7 @@ const Home = () => {
 
     <div className='flex flex-col w-full h-auto sm:mt-5 pb-10 sm:px-32 md:justify-center justify-center bg-cover gap-10 '
       style={{backgroundImage:`url(${blob})`,backgroundPosition:'left'}}>
-      <div className='self-center md:self-start h-20 bg-transparentw-auto  text-6xl sm:text-7xl md:text-8xl font-serif'>
+      <div className='self-center md:self-start h-20 bg-transparentw-auto  text-6xl sm:text-7xl md:text-8xl subheading '>
         Programms
       </div>
 
@@ -317,7 +317,7 @@ Over two months, these selected participants received rigorous training in vario
 
   <div className='flex flex-col justify-center w-full  pt-20 pb-40 px-2 gap-5 bg-cover z-10'
         style={{backgroundImage:`url(${wave2})`,backgroundPosition:`center`}}>
-       <div className='h-20 w-auto text-6xl sm:text-7xl md:text-8xl font-serif self-center sm:self-start pl-24 '>Gallery</div>
+       <div className='h-20 w-auto text-6xl sm:text-7xl md:text-8xl subheading  self-center sm:self-start pl-24 '>Gallery</div>
        <div className='flex w-full h-28 sm:h-32 md:h-40 lg:h-48 xl:h-52 justify-between gap-2 md:gap-4 sm:px-4 md:px-4 sm:mt-10 lg:px-10 xl:px-16 '>
 
        <div className=' bg-white relative  h-auto w-20 flex-1 boxes'>

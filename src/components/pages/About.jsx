@@ -51,7 +51,7 @@ const About = () => {
   return (
     <div className='body1 flex mt-20 flex-col w-full h-fit items-center bg-contain  bg-repeat-y gap-10 overflow-x-hidden'
       style={{ backgroundImage: `url(${bg})`}}>
-      <div className='header h-20 pb-20 mt-5 w-auto bg-transparent text-6xl sm:text-7xl md:text-8xl font-serif'>
+      <div className='header h-20 pb-20 mt-5 w-auto bg-transparent text-6xl sm:text-7xl md:text-8xl '>
         About Us
       </div>
 

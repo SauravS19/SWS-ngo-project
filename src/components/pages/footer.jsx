@@ -12,9 +12,9 @@ import youtube from '../../assets/links/youtube.png';
 const Foot = () => {
     return (
 
-<div className='flex flex-col flex-wrap w-full h-auto items-center body '>
+<div className='flex flex-col flex-wrap w-full h-auto items-center mainbody'>
    <div className='bg-sky-400  flex justify-center  w-full h-auto pt-2'>
-  <div className='flex items-end  text-4xl md:text-6xl italic text-white'>Samarpit Media Society</div>
+  <div className='flex items-end heading text-4xl md:text-6xl italic text-white'>Samarpit Media Society</div>
    </div>
  
       <div className='flex flex-col md:flex-row items-center w-full bg-gradient-to-b from-sky-400 to-slate-50 
@@ -25,11 +25,16 @@ const Foot = () => {
         <div className=' h-fit flex flex-col w-auto  gap-2'>
           <div className='text-left  text-xl md:text-4xl '>Programms</div>
           <div className='relative flex flex-col gap-1 '> 
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Yoga Training</div>
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Nanhi Muskan</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Nanhi Muskan</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Mille saath tumhara</div>
+        
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>HomeLens </div>
+          <div className='text-left text-sm sm:text-lg xl:text-xl'>Nanhi Chirriya </div>
+          <div className='text-left text-sm sm:text-lg xl:text-xl'>Yoga Training</div>
+          <div className='text-left text-sm sm:text-lg xl:text-xl'>Nanhi Muskan</div>
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>Kids Fashion Show  </div>
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>Mille saath tumhara</div>
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>Self Defence Training </div>
+          <div className='text-left text-sm sm:text-lg xl:text-xl'>Heritage Tour Guide Training</div>
+         
           
           
           </div>
@@ -39,9 +44,9 @@ const Foot = () => {
         <div className=' h-fit flex flex-col w-auto  gap-2'>
           <div className='text-left  text-xl md:text-4xl '>What we do</div>
           <div className='relative flex flex-col gap-1 '> 
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Social Empoverment</div>
-          <div className='text-left text-sm sm:text-lg italic xl:text-xl'>Environment Conservation</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>Tourism</div>
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>Social Empoverment</div>
+          <div className='text-left text-sm sm:text-lg  xl:text-xl'>Environment Conservation</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>Tourism</div>
           
           </div>
          
@@ -50,11 +55,12 @@ const Foot = () => {
         
         <div className='relative rounded-3xl  sm:w-full w-full flex-1 flex  bg-opacity-25 bg-white backdrop-filter backdrop-blur-lg justify-center  h-fit '>
         <div className=' h-fit flex flex-col w-auto gap-2'>
-          <div className='text-left text-xl md:text-4xl'>Contact Us</div>
-          <div className='relative flex flex-col gap-1 '> 
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>5343434545</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>djhgsjghhad@email.com</div>
-          <div className='text-left text-sm sm:text-lg italic  xl:text-xl'>ganesh vihar padampur</div>
+          <div className='text-left text-xl md:text-4xl w-9/12 self-center'>Contact Us</div>
+          <div className='relative flex flex-col gap-1 w-9/12 self-center'> 
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>Mobile No:8954757925, 8191995014</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl'>EmailID:samarpitmediasociety@gmail.com</div>
+          <div className='text-left text-sm sm:text-lg   xl:text-xl word-break'>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
+         Dehradun,Uttarakhand - 248001</div>
           </div>
         
         </div></div>

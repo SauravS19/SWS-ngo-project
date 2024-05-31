@@ -2,8 +2,22 @@
 .Container{
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
-
+.heading{
+  font-family: "Lora", serif;
+}
+.subheading{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
 
  .btn-pin {
         background-color: var(--bgOrange);
@@ -14,7 +28,7 @@
        border-radius: 10px;
         cursor: pointer;
         transition: all 0.2s;
-        font-weight: 500;
+       
         
         position: relative;
         z-index: 1;  
@@ -59,7 +73,7 @@
         .card::before {
         content: "";
         position: absolute;
-        background-color:rgb(255, 204, 241);
+        background-color:rgb(254, 224, 246);
         top: 0px;
         left: 0;
         right: 0;
@@ -177,6 +191,9 @@
 } */
 
 .animated-div2 {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
   transform: scale(0);
   transition: transform 2s;
   transform-origin: left;
@@ -186,6 +203,9 @@
   transform: scale(1);
 } 
 .animated-div1 {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
   transform: scale(0);
   transition: transform 2s;
   transform-origin: right;
@@ -196,6 +216,9 @@
 } 
 
  .animated-div {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
   transform: scaleY(0);
   transition: transform 2s;
   transform-origin: top;

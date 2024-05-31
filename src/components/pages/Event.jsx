@@ -24,9 +24,9 @@ const Event = () => {
 
   return (
     <>
-      <div className='flex flex-col h-auto w-auto  items-center pt-28 gap-4 sm:gap-7 md:gap-10 bg-cover '
+      <div className='main flex flex-col h-auto w-auto  items-center pt-28 gap-4 sm:gap-7 md:gap-10 bg-cover '
       style={{backgroundImage:`url(${bg})`}}>
-    <div className='h-40 w-full text-9xl  text-center italic'>Events</div>
+    <div className='h-40 w-full text-9xl  text-center heading'>Events</div>
     <div className='w-11/12 h-44 sm:h-48  md:h-52 lg:h-60 xl:h-72  flex gap-2 sm:gap-7 md:gap-10 xl:gap-28 px-1 '>
     <div className='flex-1  bg-opacity-25  bg-pink-600  backdrop-filter backdrop-blur-lg h-full rounded-2xl flex justify-center px-2 sm:px-6 md:px-8 xl:px-10'>
       <div className='w-2/4 h-3/4 sm:h-4/5 self-center'>
@@ -184,7 +184,7 @@ Overall, the collaboration between Samarpit Media Society and the Tourism Depart
    
     </div>
    
-    <div className='w-full h-auto mb-2 sw:mb-3 md:mb-4 lg:mb-7 xl:mb-10   text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl  pr-5 text-center'>"Privartan hi jeevan ka satya hai"</div>
+    <div className='w-full h-auto mb-2 sw:mb-3 md:mb-4 lg:mb-7 xl:mb-10   text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl quote pr-5 text-center'>"Privartan hi jeevan ka satya hai"</div>
 
 
    
