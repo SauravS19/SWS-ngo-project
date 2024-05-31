@@ -1,10 +1,17 @@
-import React, { useEffect } from 'react';
+
 import './Contact.css';
 import Foot from './footer';
-
+import React, { useState } from 'react';
 const Contact = () => {
+  const [isDiv1Visible, setIsDiv1Visible] = useState(true); // State to track visibility of div1 and div2
 
+  const showDiv2 = () => {
+    setIsDiv1Visible(false);
+  };
 
+  const showDiv1 = () => {
+    setIsDiv1Visible(true);
+  };
   return (
     <>
 
@@ -15,17 +22,21 @@ const Contact = () => {
 
     <div className="card self-center w-10/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 h-[450px] sm:h-[550px]">
       <div className="background flex flex-col space-y-1 sm:space-y-2 justify-center">
-       <div className=' text-white heading text-left pl-0 sm:pl-20 h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 
-       xl:w-7/12 self-center sm:self-start text-5xl sm:text-6xl  lg:text-7xl mb-5'>Contact Us</div>
+      <div className={isDiv1Visible?'': 'hide'}>
+      <div className='flex flex-col w-full h-full'>
+       <div className=' text-white self-center heading text-left  h-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 
+       xl:w-7/12  text-5xl sm:text-6xl self-center lg:text-7xl 2xl:text-8xl mb-5'>Contact Us</div>
        <div className=' text-white w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 self-center  
-       text-lg sm:text-xl:text-2xl'><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
+       text-lg sm:text-xl:text-2xl 2xl:text-2xl'><p>Ad:House no 183, Sirmour tea estate marg, Kaulagarh road, Kishen Nagar, 
          Dehradun,Uttarakhand - 248001
 </p>
        <p>MobileNo:8954757925, 8191995014</p>
        <p className='break-words'>EmailID:samarpitmediasociety@gmail.com</p></div>
-       <button className='btn-pin self-center text-sm md:text-lg'>follow Us</button>
+       <button className='btn-pin4 self-center text-sm md:text-xl' onClick={showDiv2}>Follow Us</button>     
       </div>
-      <div className="logo ">
+      </div>
+      </div>
+      <div className="logo mr-0 sm:mr-10">
        SWS
       </div>
 
@@ -50,9 +61,14 @@ const Contact = () => {
           </svg>
         </span>
       </div> */}
-
+  <div className={!isDiv1Visible ? '' : 'hide'}>
+  <div className='flex mt-5 mr-5 sm:mt-10 sm:mr-10 justify-end'> 
+  <button className='btn-pin4 text-sm md:text-lg' onClick={showDiv1}>Close</button>
+  </div>
+ 
       <a href="https://www.instagram.com/samarpitmedia?igsh=MW91Mm5ramMwYjZzdg==" className="box box1" target="_blank" rel="noopener noreferrer">
-            <span className="icon">
+         
+            <span className="icon mt-0 sm:mt-3">
               <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" className="svg">
                 <path d="M224.1 141c-63.6 0-115 51.4-115 115s51.4 115 115 115 115-51.4 115-115-51.4-115-115-115zm0 190c-41.3 0-75-33.7-75-75s33.7-75 75-75 75 33.7 75 75-33.7 75-75 75zm146.4-194.1c0 14.9-12.1 27-27 27s-27-12.1-27-27 12.1-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.7-9.9-67.3-36.2-92.6s-56.9-34.5-92.6-36.2C277.4 32 194.6 32 110.6 34.3c-35.7 1.7-67.3 9.9-92.6 36.2s-34.5 56.9-36.2 92.6C-32 194.6-32 277.4 34.3 361.4c1.7 35.7 9.9 67.3 36.2 92.6s56.9 34.5 92.6 36.2c84 2.3 166.8 2.3 250.8 0 35.7-1.7 67.3-9.9 92.6-36.2s34.5-56.9 36.2-92.6c2.3-84 2.3-166.8 0-250.8zM398.8 388.3c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.6 102.9-9 132.3z"></path>
               </svg>
@@ -72,6 +88,8 @@ const Contact = () => {
           </svg>
         </span>
       </a>
+     
+      </div>
     </div>
     
     </div>

@@ -110,7 +110,7 @@ const Home = () => {
                 Samarpit Media Society (SMS) stands as a beacon of hope and progress in Uttarakhand, weaving a tapestry of transformative initiatives across environmental conservation, tourism promotion, and social empowerment.</p>
                 </div>
                 </div>
-                <div className='relative  bg-transparent bottom-0 flex h-full w-full justify-evenly blur-[1.5px] gap-3 sm:gap-5'>
+                <div className='relative  bg-transparent bottom-0 flex h-full w-full justify-evenly blur-[1px] gap-3 sm:gap-5'>
                   <div className=' w-24 rounded-full animate-bounce-fast'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
@@ -155,7 +155,7 @@ const Home = () => {
                 <p className='italic text-sky-700'>“The meaning of life is to find your gift. The purpose of life is to give it away.”</p><br></br>
                 <p>With unwavering dedication, SMS employs a symphony of creative mediums—from captivating audio-visual productions to soul-stirring musical compositions and vibrant community events—to illuminate minds and ignite change.</p></div>
                 </div>
-                <div className='relative bg-transparent bottom-0 flex h-full gap-3 sm:gap-5 w-full justify-evenly blur-[1.5px]'>
+                <div className='relative bg-transparent bottom-0 flex h-full gap-3 sm:gap-5 w-full justify-evenly blur-[1px]'>
                 <div className=' w-24  rounded-full animate-bounce-fast'>
                    <img src={Blue} className='rounded-full w-full '></img>
                   </div>
