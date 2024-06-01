@@ -19,6 +19,27 @@
   font-style: italic;
 }
 
+
+.quotes {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+ .animated-div3 {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+  transform: scaleY(0);
+  transition: transform 2s;
+  transform-origin: top;
+}
+
+.animated-div3.appear {
+  transform: scale(1);
+} 
+
  .btn-pin {
         background-color: var(--bgOrange);
         width: fit-content;
@@ -158,75 +179,6 @@
 
 
 
-/* .animated-div {
-  opacity: 0;
-  transition: opacity 5s, transform 5s;
-}
-
-.from-left {
-  transform: translateX(-50px);
-}
-
-.from-right {
-  transform: translateX(50px);
-}
-
-.from-bottom {
-  transform: translateY(50px);
-}
-
-.animated-div.appear.from-left {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.animated-div.appear.from-right {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.animated-div.appear.from-bottom {
-  opacity: 1;
-  transform: translateY(0);
-} */
-
-.animated-div2 {
-  font-family: "Sevillana", cursive;
-  font-weight: 400;
-  font-style: normal;
-  transform: scale(0);
-  transition: transform 2s;
-  transform-origin: left;
-}
-
-.animated-div2.appear {
-  transform: scale(1);
-} 
-.animated-div1 {
-  font-family: "Sevillana", cursive;
-  font-weight: 400;
-  font-style: normal;
-  transform: scale(0);
-  transition: transform 2s;
-  transform-origin: right;
-}
-
-.animated-div1.appear {
-  transform: scaleY(1);
-} 
-
- .animated-div {
-  font-family: "Sevillana", cursive;
-  font-weight: 400;
-  font-style: normal;
-  transform: scaleY(0);
-  transition: transform 2s;
-  transform-origin: top;
-}
-
-.animated-div.appear {
-  transform: scale(1);
-} 
   
 .blockglow::before , .blockglow::after{
     content: "";

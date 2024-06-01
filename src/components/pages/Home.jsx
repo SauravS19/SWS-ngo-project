@@ -56,15 +56,15 @@ const Home = () => {
     });
 
    animatedDivRefs.current
-      .filter(div => div) // filter out any null or undefined values
+      .filter(div => div) 
       .forEach(div => observer.observe(div));
 
     return () => {
       animatedDivRefs.current
-        .filter(div => div) // filter out any null or undefined values
+        .filter(div => div) 
         .forEach(div => observer.unobserve(div));
     };
-  }, [animatedDivRefs]);
+  }, [animatedDivRefs.current]);
 
   return (
 
@@ -134,18 +134,21 @@ const Home = () => {
                    <div className='bg-transparent relative h-4/6 sm:h-3/4 xl:h-full w-4/5 '>
                     <img src={img4} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div ref={el => animatedDivRefs.current[0] = el} className='animated-div1 from-left w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center pt-5'>~ Transforming lives daily</div>
+                   <div className='w-full 
+                   text-sm sm:text-base md:text-xl 
+                   lg:text-2xl xl:text-3xl text-rose-800  text-center pt-5 quotes'><p>~ Transforming lives daily</p></div>
                
                 </div>
               </div>
-
+              
 
               <div className=' h-full mt-5 flex bg-transparent'>
               <div className='bg-transparent relative  w-4/5 sm:w-6/12  flex flex-col h-full justify-center items-center'>
                    <div className='bg-transparent relative h-4/6 sm:h-3/4  xl:h-full w-4/5 '>
                     <img src={img10} className=' w-full h-full rounded-3xl '></img>
                    </div>
-                   <div ref={el => animatedDivRefs.current[1] = el}  className='animated-div2 from-right w-full text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center pt-5'>~ Together for change</div>
+                   <div className=' w-full 
+                   text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-rose-800  text-center pt-5 quotes'><p>~ Together for change</p></div>
                 </div>
                
                 <div className='w-6/12 flex flex-col justify-between relative self-center bg-transparent'>
@@ -179,11 +182,12 @@ const Home = () => {
               </div>
           </div>
       </div>
-<div className='text1 flex flex-col gap-5 w-full'>
+<div className='flex flex-col gap-5 w-full'>
      <div className=' flex justify-center w-full h-28 sm:h-32 md:h-40 lg:h-48 xl:h-56 bg-top bg-cover'
       style={{backgroundImage:`url(${wave})`}}>
     <div className='slide-bottom relative w-full text-center text-xl self-end bg-transparent'>
-         <p ref={el => animatedDivRefs.current[2] = el}  className="animated-div from-bottom  text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-violet-900">“It is not how much we give, but how much love is put in the giving.”<br></br>
+         <p ref={el => animatedDivRefs.current[3] = el}  className="animated-div3 from-bottom  
+         text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-violet-900">“It is not how much we give, but how much love is put in the giving.”<br></br>
 ~Mother Teresa
 </p>  
 
