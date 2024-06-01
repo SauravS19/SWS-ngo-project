@@ -11,7 +11,7 @@ import blog from '../../assets/icons/blob3.jpeg'
 import blob from '../../assets/icons/blob.jpeg'
 import wave from '../../assets/icons/slide.png'
 import wave2 from '../../assets/icons/slide2.png'
-
+import add from '../../assets/gallery/add.jpg'
 import social from '../../assets/icons/empower.png'
 import envi from '../../assets/icons/environment.png'
 import tour from '../../assets/icons/tour-guide.png'
@@ -364,7 +364,7 @@ Over two months, these selected participants received rigorous training in vario
 </div>
 <div className=' bg-white relative  h-auto flex-1 boxes'>
 <div className='blockglow h-full'>
- <img src={img4}className='w-full h-full  '></img>
+ <img src={img0}className='w-full h-full  '></img>
 </div>
 </div>
 
@@ -387,8 +387,8 @@ Over two months, these selected participants received rigorous training in vario
 </div>
 </div>
 <div className=' bg-white relative h-auto flex-1 boxes'>
-<div className='blockglow h-full'>
- <img src={img0}className='w-full h-full  '></img>
+<div className=' h-full'>
+ <img src={add}className='w-full h-full blur-[0.5px]'></img>
 </div>
 </div>
 
